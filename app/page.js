@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* 4. SERVICES - Subtle Warm Grey BG */}
-      <section className="py-22 bg-[#F2F2EF] border-y border-black/5">
+      <section className="py-24 bg-[#F2F2EF] border-y border-black/5">
         <div className="max-w-7xl mx-auto px-10">
           <div className="mb-20">
             <h2 className="text-7xl text-center font-black  tracking-tighter uppercase text-[#1A1A1A]">
