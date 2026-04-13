@@ -110,7 +110,7 @@ export default function Home() {
       </section>
 
       {/* 🔹 5. CTA SECTION (Premium Parallax Workshop) */}
-      <section className="py-32 bg-[#F9F9F7]"> {/* Light background ke upar dark card */}
+      <section className="py-22 bg-[#F9F9F7]"> {/* Light background ke upar dark card */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="relative group overflow-hidden rounded-[3.5rem] p-12 md:p-32 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
 
