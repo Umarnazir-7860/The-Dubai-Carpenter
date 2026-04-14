@@ -131,7 +131,7 @@ export default function Home() {
                   Dubai's Master Craftsmen
                 </span>
 
-                <h2 className="text-6xl text-8xl font-black italic  uppercase mb-16 text-white">
+                <h2 className="text-2xl text-8xl font-black italic  uppercase mb-16 text-white">
                   Build <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#CCAC34] to-[#997819] inline-block">
                     Excellence.

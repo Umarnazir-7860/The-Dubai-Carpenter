@@ -73,7 +73,7 @@ export default function Hero() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-6xl text-8xl text-white font-black  tracking-tighter leading-[0.85] uppercase max-w-5xl"
+          className="text-4xl text-8xl text-white font-black  tracking-tighter leading-[0.85] uppercase max-w-5xl"
         >
           {slides[index].title} <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#CCAC34] to-[#8a6d1a]">
