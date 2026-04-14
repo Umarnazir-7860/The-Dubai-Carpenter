@@ -79,29 +79,66 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. SERVICES - Subtle Warm Grey BG */}
+      {/* 4. SERVICES - Refined with Equal Heights & BG Images */}
       <section className="py-24 bg-[#F2F2EF] border-y border-black/5">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="mb-20">
-            <h2 className="text-5xl md:text-7xl text-center font-black  tracking-tighter uppercase text-[#1A1A1A]">
-              Specialized <br /> <span className="text-[#CCAC34]">Carpentry.</span>
-            </h2>
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="mb-20 text-center">
+            <FadeIn direction="up">
+              <span className="text-[#CCAC34] font-bold tracking-[0.5em] text-[10px] uppercase block mb-4">Everything You Need</span>
+              <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase text-[#1A1A1A]">
+                Complete <br /> <span className="text-[#CCAC34]">Fit-Out.</span>
+              </h2>
+            </FadeIn>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* items-stretch grid ko control karega */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {[
-              { t: "Custom Kitchens", d: "High-gloss, solid wood, and smart hardware." },
-              { t: "Luxury Wardrobes", d: "Walk-in closets for high-end fashion storage." },
-              { t: "Wooden Pergolas", d: "Architectural outdoor structures for the sun." },
-              { t: "Wall Paneling", d: "Acoustic and decorative panels for grand entries." },
-              { t: "Bespoke Doors", d: "Solid oak and mahogany with master carvings." },
-              { t: "Office Fit-outs", d: "Executive desks and library shelving." }
+              { t: "Custom Kitchens", d: "High-gloss finishes, solid wood structures, and smart hardware integration.", img: "/kitchen.jpg" },
+              { t: "Luxury Wardrobes", d: "Bespoke walk-in closets and organizers for high-end fashion storage.", img: "/wardrobe.jpg" },
+              { t: "Glass Work", d: "Premium mirrors, glass partitions, and custom shower enclosures.", img: "/glass.jpg" },
+              { t: "Electricians", d: "Professional wiring, smart home lighting, and electrical fit-outs.", img: "/electric.jpg" },
+              { t: "Sign Boards", d: "3D Acrylic, neon, and high-impact commercial signage solutions.", img: "/sign.jpg" },
+              { t: "Gypsum Work", d: "Luxury false ceilings, partitions, and decorative wall features.", img: "/gypsum.jpg" },
+              { t: "Wood Paint & Polish", d: "Specialized wood staining, PU coatings, and premium wall finishes.", img: "/paint.jpg" },
+              { t: "Shop Fit-out", d: "Full turnkey commercial renovations for boutiques and retail stores.", img: "/shop.jpg" },
+              { t: "Office Fit-outs", d: "Executive desks, library shelving, and professional workspace design.", img: "/office.jpg" }
             ].map((s, i) => (
-              <FadeIn key={i} direction="up" delay={i * 0.05}>
-                <div className="group bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 border border-black/[0.03]">
-                  <span className="text-[#CCAC34] font-black italic text-4xl opacity-20 group-hover:opacity-100 transition-opacity">0{i + 1}</span>
-                  <h3 className="text-xl font-bold mt-6 mb-4 uppercase italic tracking-tighter">{s.t}</h3>
-                  <p className="text-gray-500 text-sm">{s.d}</p>
+              <FadeIn key={i} direction="up" delay={i * 0.05} className="flex h-full">
+                {/* Main Card: flex-col ensure karta hai ke content top to bottom align ho */}
+                <div className="group relative w-full h-full min-h-[360px] bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-700 border border-black/[0.03] flex flex-col">
+
+                  {/* Background Image Container */}
+                  <div className="absolute inset-0 z-0 overflow-hidden">
+                    <div className="absolute inset-0 bg-black/80 transition-colors duration-500 z-10 opacity-60 group-hover:opacity-60" />
+                    {/* Image lazy loading with Image component for better performance */}
+                    <Image
+                      src={s.img}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-all duration-1000"
+                      alt={s.t}
+                    />
+                  </div>
+
+                  {/* Content: relative z-20 taake ye overlay ke upar rahe */}
+                  <div className="relative z-20 p-10 flex flex-col h-full pointer-events-none">
+                    <span className="text-[#CCAC34] font-black italic text-5xl opacity-50 group-hover:opacity-100 transition-all duration-500 transform group-hover:-translate-y-2">
+                      0{i + 1}
+                    </span>
+
+                    <h3 className="text-3xl font-black mt-8 mb-4 uppercase italic tracking-tighter transition-colors duration-500 text-white leading-tight">
+                      {s.t}
+                    </h3>
+
+                    <p className="text-gray-200 text-lg leading-relaxed transition-colors duration-500">
+                      {s.d}
+                    </p>
+
+                    {/* Decorative line jo hamesha bottom par align hogi content chota ho ya bara */}
+                    <div className="mt-auto pt-8">
+                      <div className="w-10 h-[2px] bg-[#CCAC34] group-hover:w-full transition-all duration-700" />
+                    </div>
+                  </div>
                 </div>
               </FadeIn>
             ))}
@@ -126,32 +163,32 @@ export default function Home() {
             </div>
 
             <div className="relative z-30 w-full max-w-4xl">
-              
-                <span className="inline-block text-[#CCAC34] font-bold uppercase tracking-[0.5em] text-[10px] bg-white/5 backdrop-blur-md px-8 py-3 rounded-full border border-white/10 mb-12">
-                  Dubai's Master Craftsmen
+
+              <span className="inline-block text-[#CCAC34] font-bold uppercase tracking-[0.5em] text-[10px] bg-white/5 backdrop-blur-md px-8 py-3 rounded-full border border-white/10 mb-12">
+                Dubai's Master Craftsmen
+              </span>
+
+              <h2 className="text-4xl md:text-8xl font-black italic  uppercase mb-16 text-white">
+                Build <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#CCAC34] to-[#997819] inline-block">
+                  Excellence.
                 </span>
+              </h2>
 
-                <h2 className="text-4xl md:text-8xl font-black italic  uppercase mb-16 text-white">
-                  Build <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#CCAC34] to-[#997819] inline-block">
-                    Excellence.
+              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <button className="relative group/btn overflow-hidden w-full sm:w-72 bg-[#CCAC34] text-white px-10 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-xs transition-all duration-500 shadow-2xl">
+                  <span className="relative z-40 group-hover/btn:text-[#CCAC34] transition-colors duration-500">
+                    Start Your Project
                   </span>
-                </h2>
+                  {/* Fill Animation */}
+                  <div className="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500 ease-out z-30" />
+                </button>
 
-                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                  <button className="relative group/btn overflow-hidden w-full sm:w-72 bg-[#CCAC34] text-white px-10 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-xs transition-all duration-500 shadow-2xl">
-                    <span className="relative z-40 group-hover/btn:text-[#CCAC34] transition-colors duration-500">
-                      Start Your Project
-                    </span>
-                    {/* Fill Animation */}
-                    <div className="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500 ease-out z-30" />
-                  </button>
+                <button className="group flex items-center gap-4 text-white font-bold uppercase tracking-[0.2em] text-[10px] hover:text-[#CCAC34] transition-colors">
+                  Request a Catalog <span className="group-hover:translate-x-2 transition-transform">→</span>
+                </button>
+              </div>
 
-                  <button className="group flex items-center gap-4 text-white font-bold uppercase tracking-[0.2em] text-[10px] hover:text-[#CCAC34] transition-colors">
-                    Request a Catalog <span className="group-hover:translate-x-2 transition-transform">→</span>
-                  </button>
-                </div>
-              
             </div>
 
             {/* Subtle Floating Light Effect */}

@@ -71,11 +71,11 @@ export default function Navbar() {
                     <Link href="/">
                         <div className="relative  w-25 h-25 md:w-30 md:h-30 cursor-pointer hover:scale-105 transition-transform duration-300">
                             <Image
-                                src="/logo.png" 
+                                src="/logo.png"
                                 alt="The Dubai Carpenter Logo"
                                 fill
                                 className="object-contain"
-                                priority 
+                                priority
                             />
                         </div>
                     </Link>
@@ -110,10 +110,10 @@ export default function Navbar() {
                     <div className="hidden md:flex flex-1 flex-col justify-between border-r border-gold/10 pr-10">
                         <div className="info-anim">
                             <div className="relative -ml-6 w-30 h-30 ">
-                                <Image 
-                                    src="/logo.png" 
-                                    alt="The Dubai Carpenter" 
-                                    fill 
+                                <Image
+                                    src="/logo.png"
+                                    alt="The Dubai Carpenter"
+                                    fill
                                     className="object-contain"
                                 />
                             </div>
@@ -134,7 +134,7 @@ export default function Navbar() {
                     </div>
 
                     <nav className="flex-1 flex flex-col justify-center md:pl-16 space-y-4 py-10 md:py-0">
-                        {['HOME', 'SERVICES', 'OUR PROJECTS', 'MATERIALS', 'REVIEWS', 'CONTACT'].map((item, i) => (
+                        {['HOME','ABOUT-US', 'SERVICES',  'MATERIALS', 'REVIEWS', 'CONTACT'].map((item, i) => (
                             <Link
                                 key={item}
                                 href={`/${item.toLowerCase().replace(" ", "-")}`}
