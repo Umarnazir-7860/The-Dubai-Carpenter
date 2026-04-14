@@ -83,7 +83,7 @@ export default function Home() {
       <section className="py-24 bg-[#F2F2EF] border-y border-black/5">
         <div className="max-w-7xl mx-auto px-10">
           <div className="mb-20">
-            <h2 className="text-7xl text-center font-black  tracking-tighter uppercase text-[#1A1A1A]">
+            <h2 className="text-5xl md:text-7xl text-center font-black  tracking-tighter uppercase text-[#1A1A1A]">
               Specialized <br /> <span className="text-[#CCAC34]">Carpentry.</span>
             </h2>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
                   Dubai's Master Craftsmen
                 </span>
 
-                <h2 className="text-2xl text-8xl font-black italic  uppercase mb-16 text-white">
+                <h2 className="text-4xl md:text-8xl font-black italic  uppercase mb-16 text-white">
                   Build <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#CCAC34] to-[#997819] inline-block">
                     Excellence.

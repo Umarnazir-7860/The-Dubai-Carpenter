@@ -66,10 +66,10 @@ export default function Navbar() {
     return (
         <>
             {/* Styling wahi hai, sirf backdrop-blur aur bg-black/10 add kiya hai */}
-            <header className="fixed top-0 left-0 w-full h-20 z-[110] px-7 flex justify-between items-center pointer-events-none backdrop-blur-md bg-black/10">
+            <header className="fixed top-0 left-0 w-full h-20 z-[110] px-2 md:px-7 flex justify-between items-center pointer-events-none backdrop-blur-md bg-black/10">
                 <div className="pointer-events-auto">
                     <Link href="/">
-                        <div className="relative w-12 h-12 md:w-30 md:h-30 cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <div className="relative  w-25 h-25 md:w-30 md:h-30 cursor-pointer hover:scale-105 transition-transform duration-300">
                             <Image
                                 src="/logo.png" 
                                 alt="The Dubai Carpenter Logo"

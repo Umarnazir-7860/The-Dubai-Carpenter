@@ -1,4 +1,3 @@
-// components/Hero.js
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -39,30 +38,30 @@ export default function Hero() {
           transition={{ duration: 1.5, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          {/* 🖼️ KEN BURNS EFFECT (Slow Zoom) */}
+          {/* 🖼️ KEN BURNS EFFECT */}
           <motion.img 
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
             transition={{ duration: 6, ease: "linear" }}
             src={slides[index].img} 
             alt="Hero" 
-            className="h-full w-full object-cover opacity-60" 
+            className="h-full w-full object-cover opacity-50 md:opacity-60" 
           />
           
-          {/* Overlays for Luxury Feel */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent z-10" />
+          {/* Overlays - Mobile par thoda zyada dark rakha hai taake text clear nazar aaye */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 md:via-black/40 to-transparent z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-20 h-full flex flex-col justify-center px-10 md:px-24">
+      <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-24">
         <div className="overflow-hidden">
           <motion.span 
             key={`sub-${index}`}
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-[#CCAC34] tracking-[0.6em] ml-2 uppercase text-[10px] font-black block mb-4"
+            className="text-[#CCAC34] tracking-[0.3em] md:tracking-[0.6em] uppercase text-[10px] md:text-xs font-black block mb-2 md:mb-4"
           >
             {slides[index].sub}
           </motion.span>
@@ -70,24 +69,24 @@ export default function Hero() {
 
         <motion.h1 
           key={`title-${index}`}
-          initial={{ y: 50, opacity: 0 }}
+          initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-4xl text-8xl text-white font-black  tracking-tighter leading-[0.85] uppercase max-w-5xl"
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] text-white font-black tracking-tighter leading-[0.9] md:leading-[0.85] uppercase max-w-full md:max-w-5xl"
         >
-          {slides[index].title} <br />
+          {slides[index].title} <br className="hidden sm:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#CCAC34] to-[#8a6d1a]">
             {slides[index].titleGold}.
           </span>
         </motion.h1>
 
         <motion.div 
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="mt-12 flex items-center gap-8"
+          className="mt-8 md:mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-8"
         >
-          <button className="relative group overflow-hidden border border-[#CCAC34] text-white px-12 py-5 font-black rounded-full text-[10px] tracking-[0.3em] uppercase transition-all">
+          <button className="w-full sm:w-auto relative group overflow-hidden border border-[#CCAC34] text-white px-8 md:px-12 py-4 md:py-5 font-black rounded-full text-[10px] tracking-[0.3em] uppercase transition-all">
             <span className="relative z-10 group-hover:text-black transition-colors duration-500">View Our Work</span>
             <div className="absolute inset-0 bg-[#CCAC34] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
           </button>
@@ -96,12 +95,12 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* 🔹 SLIDE INDICATOR (Side Bars) */}
-      <div className="absolute right-10 top-1/2 -translate-y-1/2 z-30 flex flex-col gap-4">
+      {/* 🔹 SLIDE INDICATOR - Mobile par thoda chota kiya hai */}
+      <div className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-30 flex flex-col gap-3 md:gap-4">
         {slides.map((_, i) => (
           <div 
             key={i}
-            className={`h-12 w-[2px] transition-all duration-500 ${i === index ? "bg-[#CCAC34]" : "bg-white/20"}`}
+            className={`h-8 md:h-12 w-[2px] transition-all duration-500 ${i === index ? "bg-[#CCAC34]" : "bg-white/20"}`}
           />
         ))}
       </div>
