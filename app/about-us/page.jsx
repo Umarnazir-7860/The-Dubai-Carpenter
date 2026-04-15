@@ -5,7 +5,7 @@ export default function About() {
     return (
         <main className="w-full h-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
 
-            {/* 🔹 SECTION 1: HERO (Your existing design preserved) */}
+            {/* 🔹 SECTION 1: HERO */}
             <section className="relative w-full h-[85vh] md:h-screen flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-10 pointer-events-none opacity-20">
                     <div className="absolute top-0 left-[10%] w-[1px] h-full bg-black/10" />
@@ -34,7 +34,7 @@ export default function About() {
 
                         <h1 className="text-6xl text-white md:text-9xl font-black italic tracking-tighter uppercase leading-[0.85] mb-8">
                             Soul in <br />
-                            <span className="text-transparent border-t-black/20 bg-clip-text bg-[#CCAC34]">The Craft.</span>
+                            <span className="text-[#CCAC34]">The Craft.</span>
                         </h1>
 
                         <div className="inline-block backdrop-blur-sm bg-transparent border border-[#CCAC34] p-4 rounded-xl mt-4 shadow-sm">
@@ -44,9 +44,91 @@ export default function About() {
                 </div>
             </section>
 
-            {/* 🔹 SECTION 2: THE VISION (Enhanced Content for SEO) */}
-            <section className="py-24 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6  grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            {/* 🔹 NEW SECTION: THE ARCHITECTURAL EDGE (Transformation & Impact) */}
+            <section className="py-32 bg-white relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+
+                        {/* 📸 LEFT: THE VISUAL (Cinematic Stack) */}
+                        <div className="relative h-[600px] group">
+                            {/* Main Large Image */}
+                            <div className="absolute top-0 left-0 w-[85%] h-[90%] rounded-[3rem] overflow-hidden shadow-2xl z-20">
+                                <Image
+                                    src="/transformation-main.jpg"
+                                    fill
+                                    className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                                    alt="Luxury Interior Transformation"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                            </div>
+
+                            {/* Decorative Floating Frame */}
+                            <div className="absolute bottom-0 right-0 w-[50%] h-[50%] rounded-[2.5rem] overflow-hidden border-[12px] border-white shadow-2xl z-30 transition-transform duration-700 group-hover:-translate-y-8 group-hover:-translate-x-4">
+                                <Image
+                                    src="/transformation-detail.jpg"
+                                    fill
+                                    className="object-cover"
+                                    alt="Detail Crafting"
+                                />
+                            </div>
+
+                            {/* Vertical Text Watermark */}
+                            <div className="absolute -left-12 top-1/2 -rotate-90 origin-center opacity-10 pointer-events-none hidden md:block">
+                                <span className="text-8xl font-black uppercase tracking-tighter">Bespoke</span>
+                            </div>
+                        </div>
+
+                        {/* ✍️ RIGHT: THE STORY (Why we matter) */}
+                        <div className="relative">
+                            <FadeIn direction="left">
+                                <div className="flex items-center gap-4 mb-6">
+                                    <span className="h-[2px] w-12 bg-[#CCAC34]" />
+                                    <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase">The Transformation</span>
+                                </div>
+
+                                <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-10 italic">
+                                    Space <br />
+                                    <span className="text-zinc-300">Reimagined.</span>
+                                </h2>
+
+                                <div className="space-y-12">
+                                    <div className="relative pl-8 border-l-2 border-[#CCAC34]/30">
+                                        <h4 className="text-lg font-black uppercase mb-3">Tailored Ergonomics</h4>
+                                        <p className="text-gray-500 text-sm leading-relaxed">
+                                            We don't just fill a room; we optimize it. Every inch is calculated to align with your lifestyle, ensuring that luxury never compromises utility.
+                                        </p>
+                                    </div>
+
+                                    <div className="relative pl-8 border-l-2 border-[#CCAC34]/30">
+                                        <h4 className="text-lg font-black uppercase mb-3">Acoustic Warmth</h4>
+                                        <p className="text-gray-500 text-sm leading-relaxed">
+                                            Natural wood provides an acoustic depth that cold materials can't match. We engineer our fit-outs to absorb sound, creating serene, quiet environments.
+                                        </p>
+                                    </div>
+
+                                    <div className="relative pl-8 border-l-2 border-[#CCAC34]/30">
+                                        <h4 className="text-lg font-black uppercase mb-3">Investment in Value</h4>
+                                        <p className="text-gray-500 text-sm leading-relaxed">
+                                            High-end joinery is an asset. Our master-grade finishes increase the valuation of luxury properties across Dubai, from Palm Jumeirah to Emirates Hills.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="mt-12">
+                                    <button className="group flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] hover:text-[#CCAC34] transition-colors">
+                                        Explore the Gallery
+                                        <span className="w-10 h-[1px] bg-black group-hover:bg-[#CCAC34] group-hover:w-16 transition-all" />
+                                    </button>
+                                </div>
+                            </FadeIn>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 🔹 SECTION 2: THE VISION */}
+            <section className="py-24 relative overflow-hidden bg-white">
+                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <FadeIn direction="right" className="relative">
                         <div className="absolute -top-10 -left-10 w-32 h-32 bg-[#CCAC34]/10 rounded-full blur-3xl" />
                         <h2 className="text-4xl md:text-6xl font-extrabold tracking-tighter uppercase leading-none mb-8 text-[#1A1A1A]">
@@ -54,9 +136,6 @@ export default function About() {
                         </h2>
                         <p className="text-gray-600 text-lg leading-relaxed mb-6">
                             At The Dubai Carpenter, we don't just shape wood; we breathe life into architectural visions. By combining modern CNC precision with the timeless heritage of master joinery, we have established ourselves as the premier choice for luxury woodwork in the UAE.
-                        </p>
-                        <p className="text-gray-500 text-base leading-relaxed">
-                            Our journey began with a single lathe and a passion for perfection. Today, we handle full-scale commercial fit-outs and bespoke residential projects, ensuring that every grain tells a story of elegance and durability.
                         </p>
                     </FadeIn>
 
@@ -69,7 +148,7 @@ export default function About() {
                 </div>
             </section>
 
-            {/* 🔹 SECTION 3: THE PROCESS (New Detailed Section) */}
+            {/* 🔹 SECTION 3: THE PROCESS */}
             <section className="py-24 bg-zinc-50 border-y border-black/5">
                 <div className="max-w-7xl mx-auto px-10">
                     <div className="text-center mb-16">
@@ -93,39 +172,21 @@ export default function About() {
                 </div>
             </section>
 
-            {/* 🔹 SECTION 4: LUXURY STANDARDS (Refined & Fixed) */}
-            <section className="py-32 px-6 lg:px-20 bg-white relative overflow-hidden selection:bg-[#CCAC34] selection:text-white">
-
-                {/* Background Typography - Positioned strictly to avoid horizontal scroll */}
+            {/* 🔹 SECTION 4: LUXURY STANDARDS */}
+            <section className="py-32 px-6 lg:px-20 bg-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 pointer-events-none select-none opacity-[0.03] translate-x-1/4">
-                    <h3 className="text-[20vw] font-black uppercase italic leading-none">
-                        Quality
-                    </h3>
+                    <h3 className="text-[20vw] font-black uppercase italic leading-none">Quality</h3>
                 </div>
 
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
-
-                        {/* 🖼️ LEFT: IMAGE SIDE (Now with strict width) */}
                         <div className="w-full lg:w-1/2 relative">
                             <FadeIn direction="right">
                                 <div className="relative group">
-                                    {/* Architectural Border - Subtle background element */}
                                     <div className="absolute -top-4 -left-4 w-full h-full border border-zinc-100 rounded-[3rem] hidden md:block" />
-
                                     <div className="relative mt-10 aspect-[4/5] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border border-black/5">
-                                        <Image
-                                            src="/quality-check.jpg"
-                                            fill
-                                            className="object-cover transition-transform duration-1000 group-hover:scale-110"
-                                            alt="Dubai Luxury Woodwork Quality Inspection"
-                                            sizes="(max-w-768px) 100vw, 50vw"
-                                            priority
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                                        <Image src="/quality.jpg" fill className="object-cover" alt="Quality" priority />
                                     </div>
-
-                                    {/* Floating Badge - Smaller for better responsiveness */}
                                     <div className="absolute bottom-6 -right-4 md:right-8 bg-[#CCAC34] text-white p-6 md:p-8 rounded-2xl shadow-xl z-30">
                                         <p className="text-3xl md:text-5xl font-black italic tracking-tighter leading-none">100%</p>
                                         <p className="text-[9px] uppercase tracking-widest font-bold mt-1">Certified Precision</p>
@@ -134,7 +195,6 @@ export default function About() {
                             </FadeIn>
                         </div>
 
-                        {/* ✍️ RIGHT: CONTENT SIDE (Expanded for SEO) */}
                         <div className="w-full lg:w-1/2">
                             <FadeIn direction="left">
                                 <div className="space-y-10">
@@ -143,40 +203,57 @@ export default function About() {
                                             <div className="w-8 h-[1px] bg-[#CCAC34]" />
                                             <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase">Industry Excellence</span>
                                         </div>
-                                        <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase italic leading-[0.9] mb-8 text-[#1A1A1A]">
-                                            Uncompromising <br />
-                                            <span className="text-[#CCAC34]">Quality.</span>
-                                        </h2>
+                                        <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase italic leading-[0.9] mb-8">Uncompromising <br /><span className="text-[#CCAC34]">Quality.</span></h2>
                                         <p className="text-gray-600 text-lg leading-relaxed">
-                                            We deliver flawless bespoke joinery through a rigorous multi-stage protocol. Our premium finishes are engineered for absolute precision and durability within the UAE’s unique climate.
+                                            We deliver flawless bespoke joinery through a rigorous multi-stage protocol. Our finishes are engineered for absolute precision and durability.
                                         </p>
                                     </div>
-
-                                    {/* Feature Blocks */}
                                     <div className="space-y-6">
-                                        {[
-                                            { t: "Material Integrity", d: "Sourcing kiln-dried, A-grade timber to prevent warping and ensure long-term structural stability." },
-                                            { t: "Precision Engineering", d: "Utilizing advanced CNC detailing for sub-millimeter accuracy in every joint and carving." },
-                                            { t: "Sustainable Finishing", d: "Applying eco-friendly, UV-resistant PU coatings that maintain their luster for decades." }
-                                        ].map((item, i) => (
-                                            <div key={i} className="flex gap-6 p-6 rounded-2xl bg-zinc-50 border border-transparent hover:border-zinc-200 transition-all group">
-                                                <span className="text-2xl font-black italic text-[#CCAC34]/30 group-hover:text-[#CCAC34] transition-colors">0{i + 1}</span>
-                                                <div>
-                                                    <h4 className="font-bold uppercase tracking-widest text-sm mb-1">{item.t}</h4>
-                                                    <p className="text-gray-500 text-sm leading-relaxed">{item.d}</p>
-                                                </div>
+                                        {["Material Integrity", "Precision Engineering", "Sustainable Finishing"].map((item, i) => (
+                                            <div key={i} className="flex gap-6 p-6 rounded-2xl bg-zinc-50 border border-transparent hover:border-zinc-200 transition-all">
+                                                <span className="text-2xl font-black italic text-[#CCAC34]/30">0{i + 1}</span>
+                                                <h4 className="font-bold uppercase tracking-widest text-sm self-center">{item}</h4>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
                             </FadeIn>
                         </div>
-
                     </div>
                 </div>
             </section>
 
-            {/* 🔹 SECTION 5: STATS RECAP (For Trust Building) */}
+            {/* 🔹 NEW SECTION: THE CRAFTSMEN (Human Element) */}
+            <section className="py-32 bg-white">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <FadeIn direction="right" className="order-2 lg:order-1">
+                            <div className="relative aspect-video lg:aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
+                                <Image src="/craftsmen.jpg" fill className="object-cover" alt="Master Craftsmen at work" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 via-transparent to-transparent" />
+                                <div className="absolute bottom-10 left-10 text-white">
+                                    <p className="text-[#CCAC34] font-bold tracking-widest text-xs uppercase mb-2">Our Backbone</p>
+                                    <h4 className="text-3xl font-black uppercase italic">The Ustad Collective</h4>
+                                </div>
+                            </div>
+                        </FadeIn>
+                        <FadeIn direction="left" className="order-1 lg:order-2">
+                            <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-8">Hands that <br /><span className="text-[#CCAC34]">Understand</span> Wood.</h2>
+                            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                                Machinery can cut, but only a human hand can feel the soul of the timber. Our team consists of master joiners with over 20 years of experience in traditional Arabian and European woodworking techniques.
+                            </p>
+                            <div className="p-8 border-t border-b border-zinc-100 flex items-center gap-6">
+                                <div className="w-16 h-16 rounded-full bg-[#CCAC34]/10 flex items-center justify-center">
+                                    <svg className="w-8 h-8 text-[#CCAC34]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                                </div>
+                                <p className="text-sm font-bold uppercase tracking-widest italic text-zinc-400">Combining Old-World Soul with New-World Speed.</p>
+                            </div>
+                        </FadeIn>
+                    </div>
+                </div>
+            </section>
+
+            {/* 🔹 SECTION 5: STATS RECAP */}
             <section className="py-20 bg-[#1A1A1A] text-white">
                 <div className="max-w-7xl mx-auto px-10 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
                     {[
@@ -193,28 +270,19 @@ export default function About() {
                 </div>
             </section>
 
-            {/* 🔹 SECTION 6: DESIGN PHILOSOPHY (Refined for Premium Feel) */}
+            {/* 🔹 SECTION 6: DESIGN PHILOSOPHY */}
             <section className="py-40 px-6 relative overflow-hidden bg-[#F9F9F7]">
-
-                {/* Subtle Background Icon or Watermark */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none">
                     <span className="text-[30vw] font-black italic">"</span>
                 </div>
-
                 <div className="max-w-5xl mx-auto text-center relative z-10">
                     <FadeIn direction="up">
-                        <div className="flex justify-center mb-10">
-                            <div className="w-16 h-[1px] bg-[#CCAC34]/40" />
-                        </div>
-
+                        <div className="flex justify-center mb-10"><div className="w-16 h-[1px] bg-[#CCAC34]/40" /></div>
                         <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-[1.1] mb-12 text-[#1A1A1A]">
                             "A well-crafted space has the <span className="text-[#CCAC34] italic">power</span> to inspire <br className="hidden md:block" /> human productivity and serenity."
                         </h2>
-
                         <div className="flex flex-col items-center gap-4">
-                            <p className="text-[#1A1A1A] font-bold uppercase tracking-[0.5em] text-[10px]">
-                                The Dubai Carpenter Philosophy
-                            </p>
+                            <p className="text-[#1A1A1A] font-bold uppercase tracking-[0.5em] text-[10px]">The Dubai Carpenter Philosophy</p>
                             <div className="flex items-center gap-3">
                                 <span className="text-gray-400 text-[9px] uppercase tracking-widest italic">Defined by Precision</span>
                                 <div className="w-1 h-1 rounded-full bg-[#CCAC34]" />
@@ -225,45 +293,39 @@ export default function About() {
                 </div>
             </section>
 
-            {/* 🔹 SECTION 7: REFINED CTA (With CSS Parallax) */}
+            {/* 🔹 SECTION 7: REFINED CTA (Guaranteed CSS Parallax) */}
             <section className="py-24 px-6 relative">
                 <div className="max-w-7xl mx-auto">
-                    <div className="relative overflow-hidden rounded-[3.5rem] bg-black/40 border border-white/10 shadow-2xl p-12 md:p-32 text-center group">
+                    <div className="relative overflow-hidden rounded-[4rem] bg-[#0A0A0A]/70 border border-white/10 shadow-2xl p-12 md:p-32 text-center group">
 
-                        {/* 🖼️ PARALLAX BACKGROUND LAYER */}
+                        {/* 🖼️ PARALLAX FIX: Using pseudo-element with fixed attachment */}
                         <div
-                            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed opacity-40  transition-transform duration-700 "
-                            style={{ backgroundImage: "url('/about-cta.jpg')" }} // Yahan apni wood ya workshop ki image lagao
+                            className="absolute inset-0 z-0"
+                            style={{
+                                backgroundImage: "url('/about-cta.jpg')",
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundAttachment: 'fixed'
+                            }}
                         />
 
-                        {/* Dark Overlay for Readability */}
                         <div className="absolute inset-0 bg-black/60 z-10" />
-
-                        {/* Decorative Lines */}
                         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#CCAC34] to-transparent z-20 opacity-50" />
 
-                        {/* CONTENT (No Outer FadeIn/Scale as requested) */}
                         <div className="relative z-30">
                             <h2 className="text-5xl md:text-8xl font-black italic tracking-tighter leading-[0.9] uppercase mb-12 text-white">
-                                Have a <span className="text-[#CCAC34]">Vision?</span> <br />
-                                Let's Build It.
+                                Have a <span className="text-[#CCAC34]">Vision?</span> <br /> Let's Build It.
                             </h2>
 
                             <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
-                                <button className="bg-white text-black px-12 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-[#CCAC34] hover:text-white transition-all duration-500 shadow-xl">
+                                <button className="bg-white text-black px-12 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-[#CCAC34] hover:text-white transition-all duration-500">
                                     Start Consultation
                                 </button>
-
-                                <div className="h-[1px] w-12 bg-[#CCAC34] hidden md:block" />
-
                                 <button className="text-[#CCAC34] font-bold uppercase tracking-[0.2em] text-[10px] hover:translate-x-2 transition-transform flex items-center gap-2">
                                     Contact via WhatsApp <span>→</span>
                                 </button>
                             </div>
                         </div>
-
-                        {/* Subtle Bottom Glow */}
-                        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#CCAC34]/10 rounded-full blur-[100px] z-20" />
                     </div>
                 </div>
             </section>
