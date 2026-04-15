@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -173,8 +174,8 @@ export default function About() {
             </section>
 
             {/* 🔹 SECTION 4: LUXURY STANDARDS */}
-            <section className="py-32 px-6 lg:px-20 bg-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 pointer-events-none select-none opacity-[0.03] translate-x-1/4">
+            <section className="py-32 px-6 lg:px-20 bg-white relative overflow-hidden">x
+                <div className="absolute top-0 right-90 pointer-events-none select-none opacity-[0.03] translate-x-1/4">
                     <h3 className="text-[20vw] font-black uppercase italic leading-none">Quality</h3>
                 </div>
 
@@ -318,10 +319,23 @@ export default function About() {
                             </h2>
 
                             <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
-                                <button className="bg-white text-black px-12 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-[#CCAC34] hover:text-white transition-all duration-500">
-                                    Start Consultation
-                                </button>
-                                <button className="text-[#CCAC34] font-bold uppercase tracking-[0.2em] text-[10px] hover:translate-x-2 transition-transform flex items-center gap-2">
+                                <Link href="/contact-us">
+                                    <button className="relative group/btn overflow-hidden px-12 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-xs transition-colors duration-500">
+
+                                        {/* 1. Text Layer: Isko relative aur z-10 rakho taake ye overlay ke upar rahe */}
+                                        <span className="relative z-10 text-black group-hover/btn:text-white transition-colors duration-500">
+                                            Start Consultation
+                                        </span>
+
+                                        {/* 2. Base Background: White background jo overlay ke niche rahega */}
+                                        <div className="absolute inset-0 bg-white z-0" />
+
+                                        {/* 3. Overlay Layer: Ye z-5 par hai (Base se upar, Text se niche) */}
+                                        <div className="absolute inset-0 bg-[#CCAC34] z-5 -translate-x-full transition-transform duration-500 group-hover/btn:translate-x-0" />
+
+                                    </button>
+                                </Link>
+                                <button className="text-[#CCAC34] font-bold  border border-white px-12 py-6 rounded-2xl uppercase tracking-[0.2em] text-[10px] hover:scale-105 transition-transform flex items-center gap-2">
                                     Contact via WhatsApp <span>→</span>
                                 </button>
                             </div>
