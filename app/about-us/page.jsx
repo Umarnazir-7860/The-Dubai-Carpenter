@@ -88,7 +88,7 @@ export default function About() {
 
                                 <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-10 italic">
                                     Space <br />
-                                    <span className="text-zinc-300">Reimagined.</span>
+                                    <span className="text-[#CCAC34]">Reimagined.</span>
                                 </h2>
 
                                 <div className="space-y-12">
