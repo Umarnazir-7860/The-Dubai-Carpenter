@@ -174,7 +174,7 @@ export default function Navbar() {
 
             <div
                 ref={menuRef}
-                className="fixed inset-0 z-[100] invisible flex justify-end p-4 md:p-8 pt-24 md:pt-32"
+                className="fixed inset-0 z-[100] invisible flex justify-end p-4 md:p-8 md:pt-22"
             >
                 <div
                     className="absolute inset-0 bg-black/40 backdrop-blur-sm"
