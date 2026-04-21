@@ -11,53 +11,53 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-const kitchenFaqs = [
+const glassFaqs = [
   {
-    q: "How long does a custom kitchen project usually take?",
-    a: "Most custom kitchen projects take around 2 to 4 weeks depending on the design complexity, material selection, site conditions, and installation scope.",
+    q: "What type of glass do you use for custom projects?",
+    a: "We use high-quality tempered, laminated, frosted, and clear glass depending on the application, safety requirements, and design preference.",
   },
   {
-    q: "Do you use premium hardware in kitchen cabinets?",
-    a: "Yes, we use trusted premium hardware such as Blum and Hettich to ensure smooth, durable, and silent operation for drawers, shutters, and fittings.",
+    q: "Do you provide custom-sized glass partitions and doors?",
+    a: "Yes, all our glass work is custom measured and fabricated to fit your exact space, whether for homes, offices, or commercial interiors.",
   },
   {
-    q: "Can you design kitchens for villas and apartments?",
-    a: "Absolutely. We create bespoke kitchen solutions for villas, apartments, penthouses, and luxury residences across Dubai.",
+    q: "Can you install shower glass and bathroom enclosures?",
+    a: "Absolutely. We design and install elegant shower enclosures, bathroom partitions, and custom glass panels with premium fittings.",
   },
   {
-    q: "Do you provide 3D kitchen design before production?",
-    a: "Yes, we provide design planning and visualization so you can review the layout, finishes, and storage before manufacturing begins.",
+    q: "Do you work for villas, apartments, and offices in Dubai?",
+    a: "Yes, we provide bespoke glass work solutions for villas, apartments, penthouses, offices, and retail spaces across Dubai.",
   },
   {
-    q: "Do your kitchens come with warranty?",
-    a: "Yes, our kitchen installations are backed by a workmanship and structural warranty, giving you peace of mind and long-term value.",
+    q: "Do your glass installations come with warranty?",
+    a: "Yes, our workmanship and installation quality are backed by warranty for peace of mind and long-term performance.",
   },
 ];
 
 const features = [
-  "German Hardware",
-  "Anti-Scratch Finishes",
-  "Solid Wood Structure",
-  "Soft-Close Drawers",
-  "Space Optimization",
-  "Luxury Finishing",
+  "Tempered Safety Glass",
+  "Premium Metal Fittings",
+  "Custom Sizes",
+  "Clean Finishing",
+  "Luxury Design",
+  "Professional Installation",
 ];
 
-const kitchenTypes = [
+const glassTypes = [
   {
-    title: "Modern Kitchens",
-    desc: "Clean lines, sleek finishes, and functional layouts designed for contemporary Dubai interiors.",
-    img: "/kitchen-modern.jpg",
+    title: "Glass Partitions",
+    desc: "Elegant glass partition systems for offices, villas, and interior space division with a modern premium finish.",
+    img: "/glass-partitions.jpg",
   },
   {
-    title: "Classic Kitchens",
-    desc: "Timeless cabinetry, elegant detailing, and warm materials for a refined luxury feel.",
-    img: "/kitchen-classic.jpg",
+    title: "Shower Enclosures",
+    desc: "Custom shower glass solutions designed for durability, privacy, and refined bathroom aesthetics.",
+    img: "/glass-shower.jpg",
   },
   {
-    title: "Villa Kitchens",
-    desc: "Large-format kitchen solutions with island counters, smart storage, and premium finishes.",
-    img: "/kitchen-villa.jpg",
+    title: "Glass Doors & Mirrors",
+    desc: "Bespoke glass doors, mirror wall panels, and decorative installations tailored to luxury interiors.",
+    img: "/glass-doors.jpg",
   },
 ];
 
@@ -65,41 +65,41 @@ const processSteps = [
   {
     step: "01",
     title: "Consultation",
-    desc: "We understand your lifestyle, layout, preferences, and storage requirements.",
+    desc: "We understand your space, functional needs, design taste, and glass application requirements.",
   },
   {
     step: "02",
-    title: "Measurement",
-    desc: "Our team performs accurate site measurements for a flawless kitchen fit.",
+    title: "Site Measurement",
+    desc: "Our team performs precise on-site measurements for a perfect and safe installation.",
   },
   {
     step: "03",
-    title: "Design & 3D",
-    desc: "We develop the kitchen layout, material palette, and design direction.",
+    title: "Design Planning",
+    desc: "We finalize the glass style, thickness, fittings, finish, and overall visual direction.",
   },
   {
     step: "04",
-    title: "Production",
-    desc: "Your kitchen is crafted in our workshop using premium materials and hardware.",
+    title: "Fabrication",
+    desc: "Your glass is professionally processed and prepared with premium materials and hardware.",
   },
   {
     step: "05",
     title: "Installation",
-    desc: "We complete on-site installation with precision finishing and quality checks.",
+    desc: "We install with care, alignment precision, and detailed finishing for a flawless result.",
   },
 ];
 
-export default function CustomKitchensPage() {
+export default function GlassWorkPage() {
   return (
     <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
       {/* HERO */}
       <section className="relative h-[85vh] md:h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/kitchen-hero.jpg"
+            src="/glass-hero.jpg"
             fill
             priority
-            alt="Luxury Custom Kitchens in Dubai"
+            alt="Custom Glass Work Services in Dubai"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/45" />
@@ -110,18 +110,18 @@ export default function CustomKitchensPage() {
           <div className="max-w-3xl">
             <FadeIn direction="up">
               <span className="text-[#CCAC34] ml-1 pt-10 tracking-[0.5em] text-[10px] uppercase font-bold mb-6 block">
-                Bespoke Kitchen Solutions
+                Bespoke Glass Solutions
               </span>
 
-              <h1 className="text-5xl md:text-6xl  font-black  tracking-tighter uppercase leading-[0.9] text-white mb-6">
+              <h1 className="text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.9] text-white mb-6">
                 Custom
-                <span className="text-[#CCAC34] ml-3">Kitchens.</span>
+                <span className="text-[#CCAC34] ml-3">Glass Work.</span>
               </h1>
 
               <p className="text-white/80 text-sm md:text-lg leading-relaxed max-w-2xl mb-10">
-                Luxury custom kitchens in Dubai crafted with premium materials,
-                German hardware, intelligent storage, and expert installation
-                for villas, apartments, and modern interiors.
+                Premium custom glass work in Dubai for villas, apartments,
+                offices, and luxury interiors — crafted with tempered glass,
+                elegant fittings, precise measurements, and expert installation.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -149,27 +149,27 @@ export default function CustomKitchensPage() {
             <FadeIn direction="left">
               <div>
                 <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
-                  Built for Luxury Living
+                  Built for Modern Interiors
                 </span>
-                <h2 className="text-4xl md:text-6xl font-black  uppercase tracking-tighter leading-[0.9] mb-8">
-                  Kitchens That <br />
-                  Define <span className="text-[#CCAC34]">The Space.</span>
+                <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
+                  Glass Work That <br />
+                  Elevates <span className="text-[#CCAC34]">The Space.</span>
                 </h2>
 
                 <div className="space-y-6 text-gray-600 leading-relaxed">
                   <p className="text-lg font-medium text-[#1A1A1A]">
-                    Our custom kitchens are designed to combine elegance,
-                    durability, and practical everyday function.
+                    Our custom glass work solutions combine visual elegance,
+                    durability, and modern functionality.
                   </p>
                   <p>
-                    From compact modern layouts to expansive villa kitchens, we
-                    tailor every cabinet, finish, and storage solution around
-                    your space and lifestyle.
+                    From shower enclosures and office partitions to glass doors,
+                    mirrors, and decorative panels, every project is tailored to
+                    your interior and lifestyle needs.
                   </p>
                   <p>
-                    We use premium materials, refined detailing, and trusted
-                    German hardware to deliver a kitchen that not only looks
-                    exceptional but performs beautifully for years.
+                    We use premium-quality glass, refined fittings, and expert
+                    workmanship to deliver installations that look exceptional
+                    and perform beautifully for years.
                   </p>
                 </div>
               </div>
@@ -178,9 +178,9 @@ export default function CustomKitchensPage() {
             <FadeIn direction="right">
               <div className="relative h-[400px] rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)]">
                 <Image
-                  src="/kitchen-detail.jpg"
+                  src="/glass-detail.jpg"
                   fill
-                  alt="Premium kitchen craftsmanship"
+                  alt="Premium glass craftsmanship"
                   className="object-cover"
                 />
                 <div className="absolute bottom-8 left-8 bg-[#CCAC34] rounded-[2rem] p-6 md:p-8 shadow-2xl">
@@ -188,7 +188,7 @@ export default function CustomKitchensPage() {
                     100%
                   </span>
                   <span className="text-white text-[10px] uppercase tracking-[0.25em] font-bold block mt-2">
-                    Bespoke Design
+                    Custom Fabrication
                   </span>
                 </div>
               </div>
@@ -209,8 +209,8 @@ export default function CustomKitchensPage() {
                 Premium <span className="text-[#CCAC34]">Advantages.</span>
               </h2>
               <p className="text-gray-500 leading-relaxed">
-                Every kitchen is engineered for appearance, durability, and
-                smooth daily use.
+                Every glass installation is designed for elegance, strength,
+                safety, and long-term performance.
               </p>
             </FadeIn>
           </div>
@@ -226,8 +226,8 @@ export default function CustomKitchensPage() {
                     {item}
                   </h3>
                   <p className="text-sm text-gray-500 leading-relaxed">
-                    Carefully selected to enhance usability, elegance, and
-                    long-term performance.
+                    Carefully selected to improve appearance, safety, and
+                    premium finish in modern Dubai interiors.
                   </p>
                 </div>
               </FadeIn>
@@ -236,22 +236,22 @@ export default function CustomKitchensPage() {
         </div>
       </section>
 
-      {/* KITCHEN TYPES */}
+      {/* GLASS TYPES */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn direction="up">
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
-                Design Styles
+                Glass Solutions
               </span>
               <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
-                Kitchen <span className="text-[#CCAC34]">Types.</span>
+                Glass Work <span className="text-[#CCAC34]">Types.</span>
               </h2>
             </FadeIn>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {kitchenTypes.map((item, i) => (
+            {glassTypes.map((item, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.1}>
                 <div className="group overflow-hidden rounded-[2.5rem] bg-[#1A1A1A]">
                   <div className="relative h-[380px]">
@@ -287,7 +287,8 @@ export default function CustomKitchensPage() {
                 Why Choose Us
               </span>
               <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
-                Crafted With <span className="text-[#CCAC34]">Precision.</span>
+                Installed With{" "}
+                <span className="text-[#CCAC34]">Precision.</span>
               </h2>
             </FadeIn>
           </div>
@@ -296,34 +297,41 @@ export default function CustomKitchensPage() {
             {[
               {
                 icon: <Ruler className="text-[#CCAC34]" size={30} />,
-                title: "Accurate Measurement",
-                desc: "Every kitchen is tailored precisely to the dimensions of your space.",
+                title: "Exact Measurement",
+                desc: "Every glass installation is custom measured for a seamless and safe final fit.",
               },
               {
                 icon: <PenTool className="text-[#CCAC34]" size={30} />,
-                title: "Custom Design",
-                desc: "We create layouts and finishes based on your style and requirements.",
+                title: "Tailored Design",
+                desc: "We match the glass style, fittings, and layout to your interior vision and function.",
               },
               {
                 icon: <Hammer className="text-[#CCAC34]" size={30} />,
-                title: "Expert Production",
-                desc: "Built in our workshop using premium joinery practices and quality checks.",
+                title: "Expert Fabrication",
+                desc: "Crafted and prepared using premium materials, high standards, and quality control.",
               },
               {
                 icon: <ShieldCheck className="text-[#CCAC34]" size={30} />,
                 title: "Reliable Finish",
-                desc: "Durable materials, smooth hardware, and dependable post-installation support.",
+                desc: "Clean alignment, durable fittings, and dependable after-installation support.",
               },
             ].map((item, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.08}>
-                <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
-                  <div className="mb-6">{item.icon}</div>
-                  <h3 className="text-xl font-black italic uppercase tracking-tighter mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-white/65 text-sm leading-relaxed">
-                    {item.desc}
-                  </p>
+                {/* ✅ IMPORTANT CHANGES HERE */}
+                <div className="h-full flex">
+                  <div className="flex flex-col justify-between w-full rounded-[2rem] border border-white/10 bg-black/10 p-8">
+                    <div>
+                      <div className="mb-6">{item.icon}</div>
+
+                      <h3 className="text-xl font-black italic uppercase tracking-tighter mb-3">
+                        {item.title}
+                      </h3>
+
+                      <p className="text-white/65 text-sm leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </FadeIn>
             ))}
@@ -340,8 +348,8 @@ export default function CustomKitchensPage() {
                 Our Process
               </span>
               <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
-                From Concept to{" "}
-                <span className="text-[#CCAC34]">Completion.</span>
+                From Idea to{" "}
+                <span className="text-[#CCAC34]">Installation.</span>
               </h2>
             </FadeIn>
           </div>
@@ -368,39 +376,36 @@ export default function CustomKitchensPage() {
 
       {/* FAQ */}
       <section className="bg-[#F9F9F7]">
-        <FAQ items={kitchenFaqs} title="Custom Kitchen" highlight="FAQs." />
+        <FAQ items={glassFaqs} title="Glass Work" highlight="FAQs." />
       </section>
 
       {/* CTA */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          {/* Parallax Container */}
           <div className="relative overflow-hidden rounded-[4rem] p-12 md:p-24 text-center">
-            {/* Background Layer with Parallax */}
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-500"
               style={{
-                backgroundImage: "url('/kitchen-cta.jpg')",
-                backgroundAttachment: "fixed", // Yeh parallax create karta hai
+                backgroundImage: "url('/glass-cta.jpg')",
+                backgroundAttachment: "fixed",
               }}
             >
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black/60" />
             </div>
 
             <div className="relative z-10 max-w-4xl mx-auto">
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
-                Let’s Build Your Kitchen
+                Let’s Build With Glass
               </span>
 
               <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
-                Ready for a{" "}
-                <span className="text-[#CCAC34]">Luxury Kitchen?</span>
+                Ready for Premium{" "}
+                <span className="text-[#CCAC34]">Glass Work?</span>
               </h2>
 
               <p className="text-white/75 max-w-2xl mx-auto leading-relaxed mb-10">
-                Speak with our team for a custom kitchen consultation, design
-                guidance, and a tailored quotation for your Dubai project.
+                Speak with our team for custom glass work consultation, design
+                advice, and a tailored quotation for your Dubai project.
               </p>
 
               <div className="flex flex-col sm:flex-row justify-center gap-4">
