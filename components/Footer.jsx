@@ -2,8 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
+    const quickLinks = [
+        { label: "Home", href: "/" },
+        { label: "About", href: "/about-us" },
+        { label: "Services", href: "/services" },
+        { label: "Contact", href: "/contact-us" },
+        { label: "Blog", href: "/blog" },
+    ];
+
+    const serviceLinks = [
+        { label: "Custom Kitchens", href: "/services/custom-kitchens" },
+        { label: "Luxury Wardrobes", href: "/services/luxury-wardrobes" },
+        { label: "Glass Work", href: "/services/glass-work" },
+        { label: "Electricians", href: "/services/electricians" },
+        { label: "Sign Boards", href: "/services/sign-boards" },
+        { label: "Gypsum & Ceiling", href: "/services/gypsum-ceiling" },
+        { label: "Wood Paint & Polish", href: "/services/wood-paint-polish" },
+        { label: "Commercial Fit-out", href: "/services/commercial-fit-out" },
+        { label: "Office Fit-outs", href: "/services/office-fit-outs" }
+    ];
+
     return (
-        <footer className="bg-black text-white pt-24 pb-12 border-t border-white/5">
+        <footer className="bg-[#0d0d0d] text-white pt-24 pb-12 border-t border-[#CCAC34]/10">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
 
@@ -13,13 +33,13 @@ export default function Footer() {
                             <Image
                                 src="/logo.png"
                                 fill
-                                className="object-contain scale-[1.2] transition-transform duration-500 group-hover:scale-[1.7]"
+                                className="object-contain scale-[1.2] transition-transform duration-500 group-hover:scale-[1.3]"
                                 alt="The Dubai Carpenter Logo"
                                 priority
                             />
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs italic -mt-2">
-                            Crafting bespoke woodwork and luxury interiors across the UAE. Where traditional craftsmanship meets modern architecture.
+                            Premium Bespoke Carpentry & Furniture Solutions in Dubai. Where traditional craftsmanship meets modern architecture.
                         </p>
                     </div>
 
@@ -27,23 +47,25 @@ export default function Footer() {
                     <div>
                         <h4 className="text-[#CCAC34] font-black uppercase tracking-[0.3em] text-[10px] mb-8">Navigation</h4>
                         <ul className="space-y-4">
-                            {['Home', 'About', 'Services', 'Process', 'About Us'].map((item) => (
-                                <li key={item}>
-                                    <Link href={`/${item.toLowerCase()}`} className="text-gray-500 hover:text-white text-xs uppercase tracking-widest transition-colors duration-300">
-                                        {item}
+                            {quickLinks.map((item) => (
+                                <li key={item.label}>
+                                    <Link href={item.href} className="text-gray-500 hover:text-[#CCAC34] text-xs uppercase tracking-widest transition-colors duration-300">
+                                        {item.label}
                                     </Link>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* COLUMN 3: SERVICES */}
+                    {/* COLUMN 3: SERVICES PAGES */}
                     <div>
-                        <h4 className="text-[#CCAC34] font-black uppercase tracking-[0.3em] text-[10px] mb-8">Specialized</h4>
-                        <ul className="space-y-4">
-                            {['Custom Kitchens', 'Luxury Wardrobes', 'Wall Paneling', 'Wooden Pergolas', 'Bespoke Doors'].map((item) => (
-                                <li key={item} className="text-gray-500 text-xs uppercase tracking-widest cursor-default">
-                                    {item}
+                        <h4 className="text-[#CCAC34] font-black uppercase tracking-[0.3em] text-[10px] mb-8">Our Services</h4>
+                        <ul className="grid grid-cols-1 gap-y-4">
+                            {serviceLinks.map((item) => (
+                                <li key={item.label}>
+                                    <Link href={item.href} className="text-gray-500 hover:text-[#CCAC34] text-[11px] uppercase tracking-widest transition-colors duration-300">
+                                        {item.label}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -62,7 +84,7 @@ export default function Footer() {
                             <div>
                                 <span className="block text-[#CCAC34] text-[9px] uppercase tracking-widest mb-1">Inquiries</span>
                                 <p className="text-xs text-white font-bold tracking-widest">+971 50 XXX XXXX</p>
-                                <p className="text-xs text-gray-400 lowercase">hello@dubaicarpenter.com</p>
+                                <p className="text-xs text-gray-400 lowercase">contact@thedubaicarpenter.ae</p>
                             </div>
                         </div>
                     </div>
@@ -75,7 +97,7 @@ export default function Footer() {
                     </p>
 
                     <div className="flex gap-8">
-                        {['Instagram', 'LinkedIn', 'WhatsApp'].map((social) => (
+                        {['Instagram', 'WhatsApp'].map((social) => (
                             <Link
                                 key={social}
                                 href="#"
