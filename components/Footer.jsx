@@ -38,7 +38,7 @@ export default function Footer() {
                                 priority
                             />
                         </div>
-                        <p className="text-gray-400 text-sm leading-relaxed max-w-xs italic -mt-2">
+                        <p className="text-gray-300 text-sm leading-relaxed max-w-xs italic -mt-2">
                             Premium Bespoke Carpentry & Furniture Solutions in Dubai. Where traditional craftsmanship meets modern architecture.
                         </p>
                     </div>
@@ -49,7 +49,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {quickLinks.map((item) => (
                                 <li key={item.label}>
-                                    <Link href={item.href} className="text-gray-500 hover:text-[#CCAC34] text-xs uppercase tracking-widest transition-colors duration-300">
+                                    <Link href={item.href} className="text-gray-300 hover:text-[#CCAC34] text-xs uppercase tracking-widest transition-colors duration-300">
                                         {item.label}
                                     </Link>
                                 </li>
@@ -63,7 +63,7 @@ export default function Footer() {
                         <ul className="grid grid-cols-1 gap-y-4">
                             {serviceLinks.map((item) => (
                                 <li key={item.label}>
-                                    <Link href={item.href} className="text-gray-500 hover:text-[#CCAC34] text-[11px] uppercase tracking-widest transition-colors duration-300">
+                                    <Link href={item.href} className="text-gray-300 hover:text-[#CCAC34] text-[11px] uppercase tracking-widest transition-colors duration-300">
                                         {item.label}
                                     </Link>
                                 </li>
@@ -77,14 +77,14 @@ export default function Footer() {
                         <div className="space-y-6">
                             <div>
                                 <span className="block text-[#CCAC34] text-[9px] uppercase tracking-widest mb-1">Office Location</span>
-                                <p className="text-xs text-gray-400 leading-relaxed uppercase tracking-tighter">
-                                    Al Quoz Industrial Area 3, <br /> Dubai, United Arab Emirates
+                                <p className="text-xs text-gray-300 leading-relaxed uppercase tracking-tighter">
+                                    Deira, Dubai, <br /> United Arab Emirates
                                 </p>
                             </div>
                             <div>
                                 <span className="block text-[#CCAC34] text-[9px] uppercase tracking-widest mb-1">Inquiries</span>
-                                <p className="text-xs text-white font-bold tracking-widest">+971 50 XXX XXXX</p>
-                                <p className="text-xs text-gray-400 lowercase">contact@thedubaicarpenter.ae</p>
+                                <p className="text-xs text-white font-bold tracking-widest">+971 55 485 2036</p>
+                                <p className="text-xs text-gray-300 lowercase">contact@thedubaicarpenter.ae</p>
                             </div>
                         </div>
                     </div>

@@ -127,15 +127,21 @@ export default function CustomKitchensPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact-us">
                   <button className="bg-[#CCAC34] text-white px-8 py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-all">
-                    Get Free Quote
+                    Get your Consultation
                   </button>
                 </Link>
 
-                <Link href="/contact-us">
-                  <button className="border border-white/20 text-white px-8 py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-white hover:text-black transition-all">
-                    View Portfolio
-                  </button>
-                </Link>
+                <a
+                  href="https://wa.me/971554852036"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-4 text-white font-bold uppercase tracking-[0.2em] text-[10px] hover:text-[#CCAC34] transition-colors"
+                >
+                  Contact via whatsapp{" "}
+                  <span className="group-hover:translate-x-2 transition-transform">
+                    →
+                  </span>
+                </a>
               </div>
             </FadeIn>
           </div>
