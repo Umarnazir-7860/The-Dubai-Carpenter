@@ -60,7 +60,7 @@ export default function Navbar() {
     const mainLinks = [
         { label: "HOME", href: "/" },
         { label: "ABOUT-US", href: "/about-us" },
-        { label: "MATERIALS", href: "/materials" },
+        { label: "Blogs", href: "/blogs" },
         { label: "REVIEWS", href: "/reviews" },
         { label: "CONTACT", href: "/contact-us" }
     ];
