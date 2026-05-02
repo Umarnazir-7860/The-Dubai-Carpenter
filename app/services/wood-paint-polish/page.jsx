@@ -76,6 +76,15 @@ const processSteps = [
   },
 ];
 
+
+export const metadata = {
+  title: "Wood Paint Polish Dubai | The Dubai Carpenter",
+  description: "Premium wood paint polish services in Dubai. The Dubai Carpenter offers expert joinery, fit-out, and installation services.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function WoodPaintPage() {
   return (
     <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
@@ -83,7 +92,7 @@ export default function WoodPaintPage() {
       {/* HERO */}
       <section className="relative h-[85vh] md:h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/wood-hero.jpg" fill className="object-cover" alt="" />
+          <Image src="/wood-hero.jpg" fill className="object-cover" alt="Premium Wood Polish and Paint Dubai" />
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
@@ -93,7 +102,7 @@ export default function WoodPaintPage() {
               Wood Finishing Solutions
             </span>
 
-            <h1 className="text-5xl md:text-6xl font-black uppercase text-white leading-[0.9] mb-6">
+            <h1 className="text-4xl sm:text-4xl sm:text-5xl md:text-6xl font-black uppercase text-white leading-[0.9] mb-6">
               Wood Paint & <span className="text-[#CCAC34]">Polish.</span>
             </h1>
 
@@ -124,7 +133,7 @@ export default function WoodPaintPage() {
                 Crafted Finishing
               </span>
 
-              <h2 className="text-4xl md:text-6xl font-black uppercase leading-[0.9] mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase leading-[0.9] mb-8">
                 Finishes That <br />
                 <span className="text-[#CCAC34]">Elevate Wood.</span>
               </h2>
@@ -137,7 +146,7 @@ export default function WoodPaintPage() {
 
           <FadeIn direction="right">
             <div className="relative h-[400px] rounded-[3rem] overflow-hidden">
-              <Image src="/wood-detail.jpg" fill className="object-cover" alt="" />
+              <Image src="/wood-detail.jpg" fill className="object-cover" alt="Premium Wood Polish and Paint Dubai" />
             </div>
           </FadeIn>
 
@@ -149,7 +158,7 @@ export default function WoodPaintPage() {
         <div className="max-w-7xl mx-auto px-6">
 
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl text-center font-black mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl text-center font-black mb-16">
               Key <span className="text-[#CCAC34]">Features</span>
             </h2>
           </FadeIn>
@@ -171,7 +180,7 @@ export default function WoodPaintPage() {
         <div className="max-w-7xl mx-auto px-6">
 
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl text-center font-black mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl text-center font-black mb-16">
               Finish <span className="text-[#CCAC34]">Types</span>
             </h2>
           </FadeIn>
@@ -184,7 +193,7 @@ export default function WoodPaintPage() {
                   src={item.img}
                   fill
                   className="object-cover group-hover:scale-110 transition-all duration-700"
-                  alt=""
+                  alt="Premium Wood Polish and Paint Dubai"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
@@ -210,7 +219,7 @@ export default function WoodPaintPage() {
         <div className="max-w-7xl mx-auto px-6">
 
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl text-center font-black mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl text-center font-black mb-16">
               Why <span className="text-[#CCAC34]">Choose Us</span>
             </h2>
           </FadeIn>
@@ -247,7 +256,7 @@ export default function WoodPaintPage() {
             </div>
 
             <div className="relative z-10">
-              <h2 className="text-5xl md:text-7xl font-black text-white">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white">
                 Need Wood <span className="text-[#CCAC34]">Finishing?</span>
               </h2>
 

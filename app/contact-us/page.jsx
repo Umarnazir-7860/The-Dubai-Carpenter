@@ -3,6 +3,23 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Mail, Phone, MapPin, Clock, Loader2, Send, CheckCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import FAQ from '@/components/FAQ';
+import FadeIn from '@/components/FadeIn';
+
+const contactFaqs = [
+  {
+    q: "Where is your joinery workshop located in Dubai?",
+    a: "Our main joinery workshop is located in Al Quoz Industrial Area, Dubai. You are welcome to visit us by appointment to see our craftsmen at work."
+  },
+  {
+    q: "Do you provide free site visits and consultations?",
+    a: "Yes, we offer complimentary initial site visits and consultations within Dubai to understand your project requirements and provide accurate estimations."
+  },
+  {
+    q: "How fast can you respond to a project inquiry?",
+    a: "We aim to respond to all inquiries within 24 hours. For urgent requests, please contact us directly via WhatsApp or phone."
+  }
+];
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ name: '', email: '', subject: 'General Inquiry', message: '' });
@@ -45,7 +62,7 @@ export default function ContactPage() {
                 <div className="relative z-10 text-center px-6">
                     <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                         <span className="text-[#CCAC34] font-bold tracking-[0.5em] text-[10px] md:text-xs uppercase mb-6 block">Available Across UAE</span>
-                        <h1 className="text-6xl md:text-9xl font-black italic uppercase tracking-tighter text-white leading-[0.8]">
+                        <h1 className="text-5xl sm:text-7xl md:text-9xl font-black italic uppercase tracking-tighter text-white leading-[0.9] md:leading-[0.8]">
                             Start Your <br /> <span className="text-[#CCAC34]">Journey.</span>
                         </h1>
                     </motion.div>
@@ -60,7 +77,7 @@ export default function ContactPage() {
                         {/* Info Column */}
                         <div className="lg:col-span-4 space-y-12">
                             <div>
-                                <h2 className="text-4xl font-black italic uppercase tracking-tighter mb-6">Contact <span className="text-[#CCAC34]">Details.</span></h2>
+                                <h2 className="text-3xl sm:text-4xl font-black italic uppercase tracking-tighter mb-6">Contact <span className="text-[#CCAC34]">Details.</span></h2>
                                 <p className="text-gray-500 leading-relaxed mb-10">Reach out to our Dubai workshop for bespoke joinery and high-end wood solutions.</p>
                             </div>
                             <div className="space-y-8">
@@ -111,8 +128,31 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            {/* 3️⃣ MAP SECTION */}
-            <section className="pb-24 px-6">
+            {/* 3️⃣ SERVICE AREAS */}
+            <section className="py-20 bg-[#1A1A1A] text-white">
+                <div className="max-w-7xl mx-auto px-6 text-center">
+                    <FadeIn direction="up">
+                        <h2 className="text-3xl md:text-5xl font-black italic uppercase tracking-tighter mb-8">
+                            Areas We <span className="text-[#CCAC34]">Serve.</span>
+                        </h2>
+                        <div className="flex flex-wrap justify-center gap-4 md:gap-8 opacity-80">
+                            {["Palm Jumeirah", "Downtown Dubai", "Emirates Hills", "Dubai Marina", "Business Bay", "Arabian Ranches", "Jumeirah Golf Estates"].map((area, i) => (
+                                <span key={i} className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] border border-white/20 px-6 py-3 rounded-full hover:border-[#CCAC34] hover:text-[#CCAC34] transition-colors cursor-default">
+                                    {area}
+                                </span>
+                            ))}
+                        </div>
+                    </FadeIn>
+                </div>
+            </section>
+
+            {/* 4️⃣ FAQ SECTION */}
+            <section className="bg-[#F9F9F7]">
+                <FAQ items={contactFaqs} title="Inquiry" highlight="FAQs." />
+            </section>
+
+            {/* 5️⃣ MAP SECTION */}
+            <section className="py-24 px-6 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <div className="h-[500px] w-full rounded-[4rem] overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl border-[12px] border-[#F9F9F7]">
                         <iframe 

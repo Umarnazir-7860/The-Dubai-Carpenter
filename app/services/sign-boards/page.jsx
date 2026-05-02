@@ -81,13 +81,22 @@ const processSteps = [
   },
 ];
 
+
+export const metadata = {
+  title: "Sign Boards Dubai | The Dubai Carpenter",
+  description: "Premium sign boards services in Dubai. The Dubai Carpenter offers expert joinery, fit-out, and installation services.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function SignBoardsPage() {
   return (
     <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
       {/* HERO */}
       <section className="relative h-[85vh] md:h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/sign-hero.jpg" fill className="object-cover" alt="" />
+          <Image src="/sign-hero.jpg" fill className="object-cover" alt="Custom 3D Sign Boards Dubai" />
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
@@ -97,7 +106,7 @@ export default function SignBoardsPage() {
               Custom Sign Board Solutions
             </span>
 
-            <h1 className="text-5xl md:text-6xl font-black uppercase text-white leading-[0.9] mb-6">
+            <h1 className="text-4xl sm:text-4xl sm:text-5xl md:text-6xl font-black uppercase text-white leading-[0.9] mb-6">
               Premium <span className="text-[#CCAC34]">Sign Boards.</span>
             </h1>
 
@@ -128,7 +137,7 @@ export default function SignBoardsPage() {
                 Built for Visibility
               </span>
 
-              <h2 className="text-4xl md:text-6xl font-black uppercase leading-[0.9] mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase leading-[0.9] mb-8">
                 Sign Boards That
                 <span className="text-[#CCAC34]">Stand Out.</span>
               </h2>
@@ -146,7 +155,7 @@ export default function SignBoardsPage() {
                 src="/sign-detail.jpg"
                 fill
                 className="object-cover"
-                alt=""
+                alt="Custom 3D Sign Boards Dubai"
               />
             </div>
           </FadeIn>
@@ -157,7 +166,7 @@ export default function SignBoardsPage() {
       <section className="py-24 bg-[#F9F9F7]">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl font-black text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-center mb-16">
               Key <span className="text-[#CCAC34]">Features</span>
             </h2>
           </FadeIn>
@@ -176,7 +185,7 @@ export default function SignBoardsPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl text-center font-black mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl text-center font-black mb-16">
               Sign Board <span className="text-[#CCAC34]">Types</span>
             </h2>
           </FadeIn>
@@ -226,7 +235,7 @@ export default function SignBoardsPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Why Choose Us
               </span>
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
                 Built With <span className="text-[#CCAC34]">Precision.</span>
               </h2>
               <p className="text-white/60 text-sm md:text-base leading-relaxed mt-6">
@@ -298,7 +307,7 @@ export default function SignBoardsPage() {
             </div>
 
             <div className="relative z-10">
-              <h2 className="text-5xl md:text-7xl font-black text-white">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white">
                 Need a <span className="text-[#CCAC34]">Sign Board?</span>
               </h2>
 

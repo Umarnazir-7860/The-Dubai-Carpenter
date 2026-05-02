@@ -82,6 +82,15 @@ const processSteps = [
   }
 ];
 
+
+export const metadata = {
+  title: "Office Fit Outs Dubai | The Dubai Carpenter",
+  description: "Premium office fit outs services in Dubai. The Dubai Carpenter offers expert joinery, fit-out, and installation services.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function OfficeFitOutsPage() {
   return (
     <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
@@ -143,7 +152,7 @@ export default function OfficeFitOutsPage() {
                 <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                   Workspaces That Perform
                 </span>
-                <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-[0.9] mb-8">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-[0.9] mb-8">
                   Offices designed for <br />
                   focus & <span className="text-[#CCAC34]">impact.</span>
                 </h2>
@@ -192,7 +201,7 @@ export default function OfficeFitOutsPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Core Features
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
                 Office <span className="text-[#CCAC34]">Advantages.</span>
               </h2>
               <p className="text-gray-500 leading-relaxed">
@@ -229,7 +238,7 @@ export default function OfficeFitOutsPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Workspace Environments
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
                 Office <span className="text-[#CCAC34]">Applications.</span>
               </h2>
             </FadeIn>
@@ -271,7 +280,7 @@ export default function OfficeFitOutsPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Why Choose Us
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
                 Built With <span className="text-[#CCAC34]">Precision.</span>
               </h2>
             </FadeIn>
@@ -324,7 +333,7 @@ export default function OfficeFitOutsPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Our Process
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
                 From Planning to <span className="text-[#CCAC34]">Completion.</span>
               </h2>
             </FadeIn>
@@ -374,7 +383,7 @@ export default function OfficeFitOutsPage() {
                 Let’s Build Your Workspace
               </span>
 
-              <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
                 Ready for <span className="text-[#CCAC34]">Office Fit-Outs?</span>
               </h2>
 

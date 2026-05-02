@@ -4,6 +4,14 @@ import FadeIn from "@/components/FadeIn";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Premium Carpenter Near Me | Bespoke Joinery in Dubai",
+  description: "Find the best carpenter near me in Dubai. The Dubai Carpenter offers luxury fit-outs, bespoke joinery, and custom woodwork for residential and commercial spaces.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function Home() {
   return (
     // Main ko white/off-white rakha hai aur text ko charcoal black (#1A1A1A)
@@ -44,13 +52,13 @@ export default function Home() {
               <span className="text-[#CCAC34] font-bold tracking-[0.5em] text-[10px] uppercase block mb-6">
                 Established in UAE
               </span>
-              <h2 className="text-5xl md:text-7xl font-extrabold tracking-tighter uppercase leading-[0.9] mb-8 text-[#1A1A1A]">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter uppercase leading-[0.9] mb-8 text-[#1A1A1A]">
                 Legacy in <br />{" "}
                 <span className="text-[#CCAC34]">Every Grain.</span>
               </h2>
               <p className="text-gray-600 text-lg md:text-xl leading-relaxed max-w-md mb-10">
                 Woodwork that transcends time, crafted for the modern Dubai
-                lifestyle.
+                lifestyle. Find a premium <Link href="/contact-us" className="text-[#CCAC34] hover:text-[#997819] transition-colors font-semibold">carpenter near me</Link> for your next luxury project.
               </p>
               <Link href="/services">
                 <button className="flex items-center gap-6 group cursor-pointer">
@@ -75,7 +83,7 @@ export default function Home() {
                   <Image
                     src="/blueprint-work.jpg"
                     fill
-                    alt="Blueprint"
+                    alt="Bespoke Joinery Blueprint Dubai"
                     className="object-cover transform group-hover:scale-105 transition-transform duration-1000"
                     sizes="(max-w-768px) 100vw, 50vw"
                     priority
@@ -95,7 +103,7 @@ export default function Home() {
               <span className="text-[#CCAC34] font-bold tracking-[0.5em] text-[10px] uppercase block mb-4">
                 Everything You Need
               </span>
-              <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase text-[#1A1A1A]">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase text-[#1A1A1A]">
                 Complete <br /> <span className="text-[#CCAC34]">Fit-Out.</span>
               </h2>
             </FadeIn>
@@ -206,7 +214,82 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🔹 5. CTA SECTION (Premium Parallax Workshop) */}
+      {/* 5. WHY CHOOSE US (New Section) */}
+      <section className="py-24 bg-white border-y border-black/5">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="mb-16 text-center">
+            <FadeIn direction="up">
+              <span className="text-[#CCAC34] font-bold tracking-[0.5em] text-[10px] uppercase block mb-4">
+                The Best Carpenter Near Me
+              </span>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase text-[#1A1A1A]">
+                Why Choose <br /> <span className="text-[#CCAC34]">Us in Dubai.</span>
+              </h2>
+            </FadeIn>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              {
+                t: "Master Joinery",
+                d: "Our Dubai-based workshop utilizes advanced CNC machinery combined with traditional hand-finishing techniques to deliver flawless woodwork.",
+              },
+              {
+                t: "Premium Materials",
+                d: "We source only the finest exotic veneers, solid hardwoods, and German-engineered hardware for lifelong durability.",
+              },
+              {
+                t: "Timely Delivery",
+                d: "We understand the fast pace of Dubai. Our dedicated project managers ensure your luxury fit-out is completed on schedule.",
+              },
+            ].map((feature, i) => (
+              <FadeIn key={i} direction="up" delay={i * 0.1}>
+                <div className="p-8 border border-gray-100 rounded-[2rem] hover:shadow-2xl transition-all duration-500 bg-zinc-50/50">
+                  <h3 className="text-2xl font-black uppercase italic mb-4">
+                    {feature.t}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {feature.d}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. OUR PROCESS (New Section) */}
+      <section className="py-24 bg-[#1A1A1A] text-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="mb-16 text-center">
+            <FadeIn direction="up">
+              <span className="text-[#CCAC34] font-bold tracking-[0.5em] text-[10px] uppercase block mb-4">
+                From Vision to Reality
+              </span>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase">
+                How We <span className="text-[#CCAC34]">Work.</span>
+              </h2>
+            </FadeIn>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { s: "01", t: "Consultation", d: "Discussing your requirements and taking exact measurements." },
+              { s: "02", t: "3D Design", d: "Creating precise mockups for your approval." },
+              { s: "03", t: "Production", d: "Crafting your bespoke pieces in our Dubai workshop." },
+              { s: "04", t: "Installation", d: "Seamless on-site fitting and quality checks." },
+            ].map((step, i) => (
+              <FadeIn key={i} direction="up" delay={i * 0.1}>
+                <div className="border-l-2 border-[#CCAC34] pl-6 py-2">
+                  <span className="text-3xl font-black italic text-[#CCAC34] block mb-2">{step.s}</span>
+                  <h4 className="text-xl font-bold uppercase tracking-tight mb-2">{step.t}</h4>
+                  <p className="text-gray-400 text-xs leading-relaxed">{step.d}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 🔹 7. CTA SECTION (Premium Parallax Workshop) */}
       <section className="py-22 bg-[#F9F9F7]">
         {" "}
         {/* Light background ke upar dark card */}
@@ -228,7 +311,7 @@ export default function Home() {
                 Dubai's Master Craftsmen
               </span>
 
-              <h2 className="text-4xl md:text-8xl font-black italic  uppercase mb-16 text-white">
+              <h2 className="text-4xl sm:text-6xl md:text-8xl font-black italic uppercase mb-16 text-white">
                 Build <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#CCAC34] to-[#997819] inline-block">
                   Excellence.

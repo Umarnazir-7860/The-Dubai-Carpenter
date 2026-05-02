@@ -82,6 +82,15 @@ const processSteps = [
     }
 ];
 
+
+export const metadata = {
+  title: "Electricians Dubai | The Dubai Carpenter",
+  description: "Premium electricians services in Dubai. The Dubai Carpenter offers expert joinery, fit-out, and installation services.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function ElectriciansPage() {
     return (
         <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
@@ -129,7 +138,7 @@ export default function ElectriciansPage() {
                                 Core Capabilities
                             </span>
 
-                            <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter leading-[0.95] mb-6">
+                            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic tracking-tighter leading-[0.95] mb-6">
                                 Electrical <br />
                                 <span className="text-[#CCAC34]">Solutions Built Right.</span>
                             </h2>
@@ -188,7 +197,7 @@ export default function ElectriciansPage() {
                                 Service Coverage
                             </span>
 
-                            <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter leading-[0.95] mb-6">
+                            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic tracking-tighter leading-[0.95] mb-6">
                                 What We <br />
                                 <span className="text-[#CCAC34]">Handle.</span>
                             </h2>
@@ -253,7 +262,7 @@ export default function ElectriciansPage() {
                                 Why Choose Us
                             </span>
 
-                            <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter leading-[0.95] mb-6 text-[#1A1A1A]">
+                            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic tracking-tighter leading-[0.95] mb-6 text-[#1A1A1A]">
                                 Trusted Electrical <br />
                                 <span className="text-[#CCAC34]">Execution.</span>
                             </h2>
@@ -325,7 +334,7 @@ export default function ElectriciansPage() {
                                 Our Process
                             </span>
 
-                            <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter leading-[0.95] mb-6 text-[#1A1A1A]">
+                            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic tracking-tighter leading-[0.95] mb-6 text-[#1A1A1A]">
                                 From Planning to <br />
                                 <span className="text-[#CCAC34]">Perfect Execution.</span>
                             </h2>
@@ -392,7 +401,7 @@ export default function ElectriciansPage() {
           Let’s Power Your Project
         </span>
 
-        <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
           Need <span className="text-[#CCAC34]">Electrical Work?</span>
         </h2>
 

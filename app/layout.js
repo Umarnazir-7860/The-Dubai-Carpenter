@@ -15,12 +15,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "The Dubai Carpenter",
-  description: "Dubai's Premier Luxury Woodwork & Bespoke Joinery",
+  metadataBase: new URL("https://thedubaicarpenter.com"),
+  title: {
+    default: "The Dubai Carpenter | Top Carpenter Near Me & Luxury Fit-out in Dubai",
+    template: "%s | The Dubai Carpenter"
+  },
+  description: "Looking for a premium carpenter near me in Dubai? The Dubai Carpenter offers bespoke joinery, luxury fit-outs, and custom woodwork across Dubai.",
+  alternates: {
+    canonical: "./",
+  },
   icons: {
-    icon: "/logo.png", // public/favicon.ico
+    icon: "/logo.png",
     shortcut: "/logo.png",
-    apple: "/logo.png", // public/apple-touch-icon.png
+    apple: "/logo.png",
   },
 };
 

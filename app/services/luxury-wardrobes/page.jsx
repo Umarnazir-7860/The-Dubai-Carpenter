@@ -82,6 +82,15 @@ const processSteps = [
   }
 ];
 
+
+export const metadata = {
+  title: "Luxury Wardrobes Dubai | The Dubai Carpenter",
+  description: "Premium luxury wardrobes services in Dubai. The Dubai Carpenter offers expert joinery, fit-out, and installation services.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function LuxuryWardrobesPage() {
   return (
     <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
@@ -144,7 +153,7 @@ export default function LuxuryWardrobesPage() {
                 <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                   Refined Storage Design
                 </span>
-                <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-[0.9] mb-8">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-[0.9] mb-8">
                   Wardrobes That <br />
                   Organize in <span className="text-[#CCAC34]">Style.</span>
                 </h2>
@@ -195,7 +204,7 @@ export default function LuxuryWardrobesPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Core Features
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
                 Premium <span className="text-[#CCAC34]">Advantages.</span>
               </h2>
               <p className="text-gray-500 leading-relaxed">
@@ -232,7 +241,7 @@ export default function LuxuryWardrobesPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Design Styles
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
                 Wardrobe <span className="text-[#CCAC34]">Types.</span>
               </h2>
             </FadeIn>
@@ -274,7 +283,7 @@ export default function LuxuryWardrobesPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Why Choose Us
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
                 Crafted With <span className="text-[#CCAC34]">Precision.</span>
               </h2>
             </FadeIn>
@@ -327,7 +336,7 @@ export default function LuxuryWardrobesPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Our Process
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
                 From Concept to <span className="text-[#CCAC34]">Completion.</span>
               </h2>
             </FadeIn>
@@ -377,7 +386,7 @@ export default function LuxuryWardrobesPage() {
                 Let’s Design Your Wardrobe
               </span>
 
-              <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
                 Ready for a <span className="text-[#CCAC34]">Luxury Wardrobe?</span>
               </h2>
 

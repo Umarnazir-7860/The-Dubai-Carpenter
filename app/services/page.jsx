@@ -99,6 +99,14 @@ const services = [
   },
 ];
 
+export const metadata = {
+  title: "Premium Fit-out Services & Joinery Dubai | The Dubai Carpenter",
+  description: "Explore our premium joinery and fit-out services in Dubai. From custom kitchens and luxury wardrobes to commercial fit-outs and glass work.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function Services() {
   return (
     <main className="w-full h-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
@@ -123,7 +131,7 @@ export default function Services() {
             <span className="text-[#CCAC34] tracking-[0.6em] text-[10px] uppercase font-bold mb-6 block">
               Premium Craftsmanship
             </span>
-            <h1 className="text-6xl text-white md:text-9xl font-black italic tracking-tighter uppercase leading-[0.85] mb-8">
+            <h1 className="text-5xl sm:text-7xl md:text-9xl text-white font-black italic tracking-tighter uppercase leading-[0.9] md:leading-[0.85] mb-8">
               Premium <br /> <span className="text-[#CCAC34]">Joinery.</span>
             </h1>
           </FadeIn>
@@ -161,7 +169,7 @@ export default function Services() {
                 <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                   Unmatched Standards
                 </span>
-                <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-[0.9] mb-10">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-black italic uppercase tracking-tighter leading-[0.9] mb-10">
                   Why Architects <br /> Trust Our{" "}
                   <span className="text-[#CCAC34]">Work.</span>
                 </h2>
@@ -252,7 +260,7 @@ export default function Services() {
               <span className="text-[#CCAC34] text-center font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 The Bizgrow Standard
               </span>
-              <h2 className="text-5xl text-center md:text-6xl font-black italic uppercase tracking-tighter leading-none">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl text-center font-black italic uppercase tracking-tighter leading-[0.9] md:leading-none">
                 Committed to <br />{" "}
                 <span className="text-[#CCAC34]">Superior Quality.</span>
               </h2>
@@ -319,7 +327,7 @@ export default function Services() {
               <span className="text-[#CCAC34] font-bold tracking-[0.6em] text-[10px] uppercase mb-4 block">
                 Our Expertise
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black italic uppercase tracking-tighter leading-[0.9] md:leading-none mb-6">
                 Bespoke <span className="text-[#CCAC34]">Solutions.</span>
               </h2>
               <p className="text-gray-500 text-sm md:text-base leading-relaxed">
@@ -456,7 +464,7 @@ export default function Services() {
             />
             <div className="absolute inset-0 bg-black/60 z-10" />
             <div className="relative z-30">
-              <h2 className="text-5xl md:text-8xl font-black italic tracking-tighter leading-[0.9] uppercase mb-12 text-white">
+              <h2 className="text-4xl sm:text-6xl md:text-8xl font-black italic tracking-tighter leading-[0.9] uppercase mb-12 text-white">
                 Ready for <span className="text-[#CCAC34]">Precision?</span>
               </h2>
               <div className="flex flex-col md:flex-row justify-center gap-6 items-center">

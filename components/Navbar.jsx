@@ -86,7 +86,7 @@ export default function Navbar() {
             
             <header className="fixed top-0 left-0 w-full h-20 z-[110] px-4 md:px-7 flex justify-between items-center pointer-events-none">
                 <div className="pointer-events-auto">
-                    <Link href="/"><div className="relative w-20 h-20 cursor-pointer"><Image src="/logo.png" alt="Logo" fill className="object-contain" priority /></div></Link>
+                    <Link href="/"><div className="relative w-20 h-20 cursor-pointer"><Image src="/logo.png" alt="The Dubai Carpenter Logo" fill className="object-contain" priority /></div></Link>
                 </div>
                 <button onClick={() => setIsOpen(!isOpen)} className="pointer-events-auto flex items-center gap-4 p-2.5 px-6 rounded-full border border-[#CCAC34]/40 bg-black/20 backdrop-blur-xl">
                     <span className="text-white text-[11px] font-bold tracking-widest uppercase">{isOpen ? "CLOSE" : "MENU"}</span>
@@ -104,7 +104,7 @@ export default function Navbar() {
                 <div ref={cardRef} className="w-full max-w-[850px] bg-[#0d0d0d] border border-[#CCAC34]/20 rounded-3xl relative shadow-2xl flex flex-col md:flex-row p-8 md:p-12 max-h-[82vh] overflow-y-auto no-scrollbar">
                     <div className="hidden md:flex flex-1 flex-col justify-between border-r border-[#CCAC34]/10 pr-10">
                         <div>
-                            <div className="relative -ml-6 w-24 h-24"><Image src="/logo.png" alt="Logo" fill className="object-contain" /></div>
+                            <div className="relative -ml-6 w-24 h-24"><Image src="/logo.png" alt="The Dubai Carpenter Logo" fill className="object-contain" /></div>
                             <div className="text-[#CCAC34] font-bold text-2xl tracking-tighter italic underline underline-offset-8 uppercase">The Dubai Carpenter</div>
                             <p className="text-gray-500 text-sm mt-4">Premium Bespoke Carpentry & Furniture Solutions.</p>
                         </div>

@@ -2,6 +2,14 @@ import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import Link from "next/link";
 
+export const metadata = {
+  title: "About Us | Top Carpenter Near Me in Dubai | The Dubai Carpenter",
+  description: "Learn about The Dubai Carpenter. We are a team of expert craftsmen and premium joinery specialists providing bespoke woodwork and fit-outs across Dubai.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function About() {
   return (
     <main className="w-full h-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
@@ -34,7 +42,7 @@ export default function About() {
               <div className="w-12 h-[1px] bg-[#CCAC34]" />
             </div>
 
-            <h1 className="text-6xl text-white md:text-9xl font-black italic tracking-tighter uppercase leading-[0.85] mb-8">
+            <h1 className="text-4xl sm:text-6xl md:text-9xl text-white font-black italic tracking-tighter uppercase leading-[0.9] md:leading-[0.85] mb-8">
               Soul in <br />
               <span className="text-[#CCAC34]">The Craft.</span>
             </h1>
@@ -93,7 +101,7 @@ export default function About() {
                   </span>
                 </div>
 
-                <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-10 italic">
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-10 italic">
                   Space <br />
                   <span className="text-[#CCAC34]">Reimagined.</span>
                 </h2>
@@ -106,7 +114,7 @@ export default function About() {
                     <p className="text-gray-500 text-sm leading-relaxed">
                       We don't just fill a room; we optimize it. Every inch is
                       calculated to align with your lifestyle, ensuring that
-                      luxury never compromises utility.
+                      luxury never compromises utility. Looking for specific work? See our <Link href="/services/custom-kitchens" className="text-[#CCAC34] hover:text-[#997819] transition-colors font-semibold">Custom Kitchens</Link>.
                     </p>
                   </div>
 
@@ -152,7 +160,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <FadeIn direction="right" className="relative">
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-[#CCAC34]/10 rounded-full blur-3xl" />
-            <h2 className="text-4xl md:text-6xl font-extrabold tracking-tighter uppercase leading-none mb-8 text-[#1A1A1A]">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter uppercase leading-[0.9] md:leading-none mb-8 text-[#1A1A1A]">
               Merging <br />{" "}
               <span className="text-[#CCAC34]">Tech & Timber.</span>
             </h2>
@@ -198,7 +206,7 @@ export default function About() {
             <h3 className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4">
               Our Methodology
             </h3>
-            <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.9] md:leading-none">
               From Sketch to{" "}
               <span className="italic text-[#CCAC34] ">Structure.</span>
             </h2>
@@ -278,7 +286,7 @@ export default function About() {
                         Industry Excellence
                       </span>
                     </div>
-                    <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase italic leading-[0.9] mb-8">
+                    <h2 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase italic leading-[0.9] mb-8">
                       Uncompromising <br />
                       <span className="text-[#CCAC34]">Quality.</span>
                     </h2>
@@ -338,7 +346,7 @@ export default function About() {
               </div>
             </FadeIn>
             <FadeIn direction="left" className="order-1 lg:order-2">
-              <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-8">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-8">
                 Hands that <br />
                 <span className="text-[#CCAC34]">Understand</span> Wood.
               </h2>
@@ -404,7 +412,7 @@ export default function About() {
             <div className="flex justify-center mb-10">
               <div className="w-16 h-[1px] bg-[#CCAC34]/40" />
             </div>
-            <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-[1.1] mb-12 text-[#1A1A1A]">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tighter uppercase leading-[1.1] mb-12 text-[#1A1A1A]">
               "A well-crafted space has the{" "}
               <span className="text-[#CCAC34] italic">power</span> to inspire{" "}
               <br className="hidden md:block" /> human productivity and
@@ -447,7 +455,7 @@ export default function About() {
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#CCAC34] to-transparent z-20 opacity-50" />
 
             <div className="relative z-30">
-              <h2 className="text-5xl md:text-8xl font-black italic tracking-tighter leading-[0.9] uppercase mb-12 text-white">
+              <h2 className="text-4xl sm:text-6xl md:text-8xl font-black italic tracking-tighter leading-[0.9] uppercase mb-12 text-white">
                 Have a <span className="text-[#CCAC34]">Vision?</span> <br />{" "}
                 Let's Build It.
               </h2>

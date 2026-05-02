@@ -76,13 +76,22 @@ const processSteps = [
   },
 ];
 
+
+export const metadata = {
+  title: "Gypsum Ceiling Dubai | The Dubai Carpenter",
+  description: "Premium gypsum ceiling services in Dubai. The Dubai Carpenter offers expert joinery, fit-out, and installation services.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function GypsumPage() {
   return (
     <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
       {/* HERO */}
       <section className="relative h-[85vh] md:h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/gypsum-hero.jpg" fill className="object-cover" alt="" />
+          <Image src="/gypsum-hero.jpg" fill className="object-cover" alt="Luxury Gypsum Ceiling Fit-out Dubai" />
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
@@ -92,7 +101,7 @@ export default function GypsumPage() {
               Custom Ceiling Solutions
             </span>
 
-            <h1 className="text-5xl md:text-6xl font-black uppercase text-white leading-[0.9] mb-6">
+            <h1 className="text-4xl sm:text-4xl sm:text-5xl md:text-6xl font-black uppercase text-white leading-[0.9] mb-6">
               Gypsum <span className="text-[#CCAC34]">Ceilings.</span>
             </h1>
 
@@ -123,7 +132,7 @@ export default function GypsumPage() {
                 Built for Interiors
               </span>
 
-              <h2 className="text-4xl md:text-6xl font-black uppercase leading-[0.9] mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase leading-[0.9] mb-8">
                 Ceilings That <br />
                 <span className="text-[#CCAC34]">Define Space.</span>
               </h2>
@@ -141,7 +150,7 @@ export default function GypsumPage() {
                 src="/gypsum-det.jpg"
                 fill
                 className="object-cover"
-                alt=""
+                alt="Luxury Gypsum Ceiling Fit-out Dubai"
               />
             </div>
           </FadeIn>
@@ -152,7 +161,7 @@ export default function GypsumPage() {
       <section className="py-24 bg-[#F9F9F7]">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl text-center font-black mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl text-center font-black mb-16">
               Key <span className="text-[#CCAC34]">Features</span>
             </h2>
           </FadeIn>
@@ -172,7 +181,7 @@ export default function GypsumPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl text-center font-black mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl text-center font-black mb-16">
               Ceiling <span className="text-[#CCAC34]">Types</span>
             </h2>
           </FadeIn>
@@ -184,7 +193,7 @@ export default function GypsumPage() {
                   src={item.img}
                   fill
                   className="object-cover group-hover:scale-110 transition-all duration-700"
-                  alt=""
+                  alt="Luxury Gypsum Ceiling Fit-out Dubai"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
@@ -211,7 +220,7 @@ export default function GypsumPage() {
                 Why Choose Us
               </span>
 
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
                 Built With <span className="text-[#CCAC34]">Precision.</span>
               </h2>
 
@@ -285,7 +294,7 @@ export default function GypsumPage() {
             </div>
 
             <div className="relative z-10">
-              <h2 className="text-5xl md:text-7xl font-black text-white">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white">
                 Need a <span className="text-[#CCAC34]">Gypsum Ceiling?</span>
               </h2>
 

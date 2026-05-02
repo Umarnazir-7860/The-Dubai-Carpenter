@@ -89,6 +89,14 @@ const processSteps = [
   },
 ];
 
+export const metadata = {
+  title: "Custom Kitchens & Fit-out Dubai | The Dubai Carpenter",
+  description: "Bespoke custom kitchens in Dubai. We offer luxury kitchen design, fit-out, and premium German hardware for villas and apartments.",
+  alternates: {
+    canonical: "./",
+  },
+};
+
 export default function CustomKitchensPage() {
   return (
     <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white">
@@ -113,7 +121,7 @@ export default function CustomKitchensPage() {
                 Bespoke Kitchen Solutions
               </span>
 
-              <h1 className="text-5xl md:text-6xl  font-black  tracking-tighter uppercase leading-[0.9] text-white mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] text-white mb-6">
                 Custom
                 <span className="text-[#CCAC34] ml-3">Kitchens.</span>
               </h1>
@@ -157,7 +165,7 @@ export default function CustomKitchensPage() {
                 <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                   Built for Luxury Living
                 </span>
-                <h2 className="text-4xl md:text-6xl font-black  uppercase tracking-tighter leading-[0.9] mb-8">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
                   Kitchens That <br />
                   Define <span className="text-[#CCAC34]">The Space.</span>
                 </h2>
@@ -170,7 +178,7 @@ export default function CustomKitchensPage() {
                   <p>
                     From compact modern layouts to expansive villa kitchens, we
                     tailor every cabinet, finish, and storage solution around
-                    your space and lifestyle.
+                    your space and lifestyle. Looking for comprehensive fit-outs? Check out our <Link href="/services/commercial-fit-out" className="text-[#CCAC34] hover:text-[#997819] transition-colors font-semibold">Commercial Fit-out</Link> services.
                   </p>
                   <p>
                     We use premium materials, refined detailing, and trusted
@@ -211,7 +219,7 @@ export default function CustomKitchensPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Core Features
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
                 Premium <span className="text-[#CCAC34]">Advantages.</span>
               </h2>
               <p className="text-gray-500 leading-relaxed">
@@ -250,7 +258,7 @@ export default function CustomKitchensPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Design Styles
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none mb-6">
                 Kitchen <span className="text-[#CCAC34]">Types.</span>
               </h2>
             </FadeIn>
@@ -292,7 +300,7 @@ export default function CustomKitchensPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Why Choose Us
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
                 Crafted With <span className="text-[#CCAC34]">Precision.</span>
               </h2>
             </FadeIn>
@@ -345,7 +353,7 @@ export default function CustomKitchensPage() {
               <span className="text-[#CCAC34] font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">
                 Our Process
               </span>
-              <h2 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic uppercase tracking-tighter leading-none">
                 From Concept to{" "}
                 <span className="text-[#CCAC34]">Completion.</span>
               </h2>
@@ -399,7 +407,7 @@ export default function CustomKitchensPage() {
                 Let’s Build Your Kitchen
               </span>
 
-              <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black italic tracking-tighter uppercase leading-[0.9] mb-8 text-white">
                 Ready for a{" "}
                 <span className="text-[#CCAC34]">Luxury Kitchen?</span>
               </h2>
