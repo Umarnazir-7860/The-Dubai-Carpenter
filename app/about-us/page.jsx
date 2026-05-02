@@ -243,7 +243,7 @@ export default function About() {
 
       {/* 🔹 SECTION 4: LUXURY STANDARDS */}
       <section className="py-32 px-6 lg:px-20 bg-white relative overflow-hidden">
-        x
+      
         <div className="absolute top-0 right-90 pointer-events-none select-none opacity-[0.03] translate-x-1/4">
           <h3 className="text-[20vw] font-black uppercase italic leading-none">
             Quality
