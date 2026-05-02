@@ -18,7 +18,7 @@ export const metadata = {
   metadataBase: new URL("https://thedubaicarpenter.com"),
   title: {
     default: "The Dubai Carpenter | Top Carpenter Near Me & Luxury Fit-out in Dubai",
-    template: "%s | The Dubai Carpenter"
+    template: "%s"
   },
   description: "Looking for a premium carpenter near me in Dubai? The Dubai Carpenter offers bespoke joinery, luxury fit-outs, and custom woodwork across Dubai.",
   alternates: {
