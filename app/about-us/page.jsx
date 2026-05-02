@@ -3,7 +3,7 @@ import FadeIn from "@/components/FadeIn";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Us | Top Carpenter Near Me in Dubai | The Dubai Carpenter",
+  title: "About Us | Bespoke Joinery Dubai | The Dubai Carpenter",
   description: "Learn about The Dubai Carpenter. We are a team of expert craftsmen and premium joinery specialists providing bespoke woodwork and fit-outs across Dubai.",
   alternates: {
     canonical: "./",
@@ -25,7 +25,7 @@ export default function About() {
           <Image
             src="/about-hero.jpg"
             fill
-            alt="The Dubai Carpenter Workshop"
+            alt="About The Dubai Carpenter - Luxury Joinery Workshop Dubai"
             className="object-cover"
             priority
           />

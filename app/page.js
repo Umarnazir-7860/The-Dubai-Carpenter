@@ -15,7 +15,8 @@ export const metadata = {
 export default function Home() {
   return (
     // Main ko white/off-white rakha hai aur text ko charcoal black (#1A1A1A)
-    <main className="bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white antialiased">
+    <main className="w-full bg-[#F9F9F7] text-[#1A1A1A] selection:bg-[#CCAC34] selection:text-white antialiased">
+      <h1 className="sr-only">Premium Carpenter Near Me & Bespoke Joinery in Dubai</h1>
       {/* 1. HERO SECTION */}
       <Hero />
 
@@ -30,9 +31,9 @@ export default function Home() {
           ].map((stat, i) => (
             <FadeIn key={i} direction="up" delay={i * 0.1}>
               <div className="group text-center">
-                <h3 className="text-white text-4xl font-black  tracking-tighter mb-1">
+                <p className="text-white text-4xl font-black  tracking-tighter mb-1">
                   {stat.value}
-                </h3>
+                </p>
                 <p className="text-white text-[10px] uppercase tracking-[0.3em] font-semibold">
                   {stat.label}
                 </p>
@@ -280,7 +281,7 @@ export default function Home() {
               <FadeIn key={i} direction="up" delay={i * 0.1}>
                 <div className="border-l-2 border-[#CCAC34] pl-6 py-2">
                   <span className="text-3xl font-black italic text-[#CCAC34] block mb-2">{step.s}</span>
-                  <h4 className="text-xl font-bold uppercase tracking-tight mb-2">{step.t}</h4>
+                  <h3 className="text-xl font-bold uppercase tracking-tight mb-2">{step.t}</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">{step.d}</p>
                 </div>
               </FadeIn>

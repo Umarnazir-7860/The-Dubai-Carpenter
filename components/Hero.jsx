@@ -70,7 +70,7 @@ export default function Hero() {
           </motion.span>
         </div>
 
-        <motion.h1
+        <motion.div
           key={`title-${index}`}
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -81,7 +81,7 @@ export default function Hero() {
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#CCAC34] to-[#8a6d1a]">
             {slides[index].titleGold}.
           </span>
-        </motion.h1>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

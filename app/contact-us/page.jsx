@@ -55,7 +55,7 @@ export default function ContactPage() {
                 <div className="absolute inset-0 opacity-50">
                     <Image 
                         src="/contact-h.jpg" // Apni image lagayein
-                        fill className="object-cover" alt="The Dubai Carpenter" 
+                        fill className="object-cover" alt="Contact The Dubai Carpenter - Luxury Joinery Workshop" 
                     />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/70"></div>

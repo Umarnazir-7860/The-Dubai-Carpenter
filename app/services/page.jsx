@@ -100,7 +100,7 @@ const services = [
 ];
 
 export const metadata = {
-  title: "Premium Fit-out Services & Joinery Dubai | The Dubai Carpenter",
+  title: "Fit-out Services & Joinery Dubai | The Dubai Carpenter",
   description: "Explore our premium joinery and fit-out services in Dubai. From custom kitchens and luxury wardrobes to commercial fit-outs and glass work.",
   alternates: {
     canonical: "./",
@@ -118,11 +118,11 @@ export default function Services() {
         </div>
         <div className="absolute inset-0 z-0">
           <Image
-            src="/crafting.jpg"
+            src="/blueprint.jpg"
             fill
-            alt="Joinery Dubai"
-            className="object-cover"
             priority
+            alt="Premium Joinery and Fit-out Services in Dubai"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
