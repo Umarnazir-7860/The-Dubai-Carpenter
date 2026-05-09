@@ -61,7 +61,7 @@ export default function Navbar() {
         { label: "HOME", href: "/" },
         { label: "ABOUT-US", href: "/about-us" },
         { label: "Blogs", href: "/blogs" },
-        { label: "TESTIMONIALS", href: "/testimonials" },
+        { label: "Our Reviews", href: "/our-reviews" },
         { label: "CONTACT", href: "/contact-us" }
     ];
 
