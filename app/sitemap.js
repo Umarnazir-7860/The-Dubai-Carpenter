@@ -1,7 +1,11 @@
+import fs from "fs";
+import path from "path";
+
 export default function sitemap() {
   const BASE_URL = "https://thedubaicarpenter.com";
 
-  const routes = [
+  // 1. Static and Services Routes
+  const staticRoutes = [
     "",
     "/about-us",
     "/contact-us",
@@ -16,12 +20,37 @@ export default function sitemap() {
     "/services/office-fit-outs",
     "/services/sign-boards",
     "/services/wood-paint-polish",
+    "/blogs", // Aapka main pagination/listing page
   ];
 
-  return routes.map((route) => ({
+  const sitemapEntries = staticRoutes.map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: route === "" || route === "/" ? 1.0 : 0.8,
+    priority: route === "" ? 1.0 : 0.8,
   }));
+
+  // 2. Dynamic Blog Routes Generation (Root ke content folder se)
+  const blogDirectory = path.join(process.cwd(), "content");
+  
+  if (fs.existsSync(blogDirectory)) {
+    const files = fs.readdirSync(blogDirectory);
+    
+    const blogEntries = files
+      .filter((file) => file.endsWith(".md"))
+      .map((filename) => {
+        const slug = filename.replace(".md", "");
+        return {
+          // Aapka actual path `/blogs/[slug]` hai, isliye yahan /blogs/ dynamic use hoga
+          url: `${BASE_URL}/blogs/${slug}`,
+          lastModified: new Date(),
+          changeFrequency: "weekly",
+          priority: 0.6,
+        };
+      });
+
+    return [...sitemapEntries, ...blogEntries];
+  }
+
+  return sitemapEntries;
 }
