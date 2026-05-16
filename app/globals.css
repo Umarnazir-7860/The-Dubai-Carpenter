@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "@tailwindcss/typography";
 :root {
   /* Ek kafi premium off-white shade jo gold ke sath acha lagta hai */
   --background: #F9F9F7; 
